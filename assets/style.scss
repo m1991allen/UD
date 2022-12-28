@@ -29,6 +29,7 @@ header {
         width: 30%;
     }
 
+    // menu style
     .h_menu {
         width: 55%;
         ul {
@@ -57,6 +58,8 @@ header {
 
 section {
     position: relative;
+
+    // banner style
     .b_video {
         max-height: 600px;
         overflow-y: hidden;
@@ -73,7 +76,7 @@ section {
             justify-content: space-evenly;
             background-color: var(--main-bgc);
             color: white;
-            width: 50%;
+            width: 700px;
             padding: 3rem 0 1rem 0;
 
             li {
@@ -83,18 +86,22 @@ section {
                 }
             }
 
-            li::before {
-                content: '';
+            li:nth-child(2) {
+                border-right: 1px solid;
                 border-left: 1px solid;
-                display: inline-block;
-                height: 70px;
-                margin-right: 8rem;
-            }
-
-            li:nth-child(1)::before {
-                border: none;
-                margin-right: 0rem;
+                padding: 0 4rem;
             }
         }
+    }
+}
+
+// intro style
+section.intro {
+    margin-top: 10rem;
+    display: flex;
+    padding: 0px 9rem;
+    
+    .i_text {
+        margin: 1rem 2rem;
     }
 }
