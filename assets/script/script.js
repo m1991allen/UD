@@ -234,4 +234,15 @@
             clearInterval()
         }
     }, 5)
+
+    // Swiper Setting
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    })
 })()

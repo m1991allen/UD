@@ -16,10 +16,6 @@
         margin: 0;
     }
 
-    section {
-        margin: 5rem 0;
-    }
-
     // 設置
     --bgc-main: #232323;
     --bgc-landing-btn: #252525;
@@ -208,10 +204,23 @@ section {
         margin: auto;
         position: absolute;
         left: 50%;
-        bottom: -70%;
+        bottom: -20%;
         transform: translateX(-50%);
+        height: 150px;
         h2 {
             text-align: center;
+        }
+
+        ul {
+            padding-left: 0;
+            li {
+                margin: 0 1rem;
+            }
+        }
+        .profolio_layout {
+            width: 980px;
+            margin: auto;
+            overflow-y: hidden;
         }
     }
 }
