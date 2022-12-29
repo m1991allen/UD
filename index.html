@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ud官網</title>
+
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
@@ -39,10 +40,51 @@
         <section class="intro">
             <div class="i_img">
                 <img src="{{intro_src}}" alt="{{intro_alt}}" />
+                <div class="i_landing">
+                    <a href="{{intro_landing_href}}">{{intro_landing_text}}</a>
+                </div>
             </div>
             <div class="i_text">
                 <h2>{{intro_title}}</h2>
                 <article>{{intro_text}}</article>
+            </div>
+        </section>
+
+        <section class="data">
+            <ul class="i_data"></ul>
+        </section>
+
+        <section>
+            <!-- Service -->
+            <div class="service">
+                <h2>{{service_title}}</h2>
+                <div>
+                    <ul>
+                        {{service_icon}}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Profolio -->
+            <div class="profolio">
+                <h2>{{profolio_title}}</h2>
+                <ul>
+                    <li>
+                        <img src="/assets/res/主頁 2/主頁/案例A圖.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="/assets/res/主頁 2/主頁/案例B圖.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="/assets/res/主頁 2/主頁/案例C圖.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="/assets/res/主頁 2/主頁/案例B圖.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="/assets/res/主頁 2/主頁/案例A圖.jpg" alt="" />
+                    </li>
+                </ul>
             </div>
         </section>
 

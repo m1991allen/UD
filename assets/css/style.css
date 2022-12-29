@@ -1,7 +1,19 @@
 @charset "UTF-8";
 :root {
   font-family: 微軟正黑體, "Noto Sans TC", Roboto;
-  --main-bgc: #232323;
+  --bgc-main: #232323;
+  --bgc-landing-btn: #252525;
+  --bgc-landing-link: #4b4b4b;
+  --h1-font: 40px;
+  --h2-font: 32px;
+  --h3-font: 24px;
+  --h4-font: 20px;
+  --h5-font: 18px;
+  --h6-font: 22px;
+  --h2-padding: 1rem 0;
+}
+:root body {
+  margin: 0;
 }
 :root a {
   text-decoration: none;
@@ -12,8 +24,8 @@
   list-style-type: none;
   margin: 0;
 }
-:root body {
-  margin: 0;
+:root section {
+  margin: 5rem 0;
 }
 
 header {
@@ -39,7 +51,7 @@ header .h_udm {
 }
 header .h_udm a {
   display: inline-block;
-  background-color: black;
+  background-color: var(--bgc-landing-btn);
   color: white;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -61,7 +73,7 @@ section .b_icon ul {
   left: 50%;
   transform: translateX(-50%);
   justify-content: space-evenly;
-  background-color: var(--main-bgc);
+  background-color: var(--bgc-main);
   color: white;
   width: 700px;
   padding: 3rem 0 1rem 0;
@@ -78,9 +90,98 @@ section .b_icon ul li:nth-child(2) {
 
 section.intro {
   margin-top: 10rem;
-  display: flex;
-  padding: 0px 9rem;
+  display: grid;
+  grid-template-columns: 870px 450px;
+  justify-content: center;
+  padding: 0px 12rem;
+  position: relative;
+}
+section.intro .i_img {
+  position: relative;
+}
+section.intro .i_img img {
+  width: 100%;
+}
+section.intro .i_img .i_landing {
+  position: absolute;
+  background-color: var(--bgc-landing-link);
+  bottom: -5%;
+  right: -15%;
+}
+section.intro .i_img .i_landing a {
+  color: white;
+  text-align: center;
+  padding: 1rem 4.5rem;
 }
 section.intro .i_text {
   margin: 1rem 2rem;
+}
+section.intro .i_text h2 {
+  font-size: var(--h2-font);
+  padding: 1rem 0;
+}
+
+section.data {
+  width: 50%;
+  margin: auto;
+}
+section.data .i_data {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content: center;
+  text-align: center;
+}
+section.data .i_data li {
+  font-weight: 600;
+}
+section.data .i_data li p.data_count {
+  font-size: 40px;
+}
+section.data .i_data li p {
+  font-size: 20px;
+}
+
+section {
+  position: relative;
+}
+section .service {
+  color: white;
+  background-color: var(--bgc-main);
+}
+section .service h2 {
+  text-align: center;
+  color: white;
+  padding: 3rem 0;
+}
+section .service ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 1200px;
+  margin: auto;
+  padding: 1rem 0 7rem;
+}
+section .service ul li {
+  text-align: center;
+}
+section .service ul li:nth-child(1),
+section .service ul li:nth-child(2),
+section .service ul li:nth-child(3),
+section .service ul li:nth-child(4),
+section .service ul li:nth-child(5),
+section .service ul li:nth-child(6),
+section .service ul li:nth-child(7) {
+  border-right: 1px solid;
+}
+section .profolio {
+  color: white;
+  background-color: var(--bgc-landing-link);
+  width: 1200px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: -70%;
+  transform: translateX(-50%);
+}
+section .profolio h2 {
+  text-align: center;
 }
