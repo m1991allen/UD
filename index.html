@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ud官網</title>
         <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     </head>
     <body>
         <!-- header -->
         <header>
             <div class="h_logo">
-                <img src="{{logo_src}}" alt="{{logo_text}}" />
+                <img src="{{logo_src}}" />
             </div>
             <div class="h_menu">
                 <ul class="menu">
@@ -24,7 +25,7 @@
         </header>
 
         <!-- Banner -->
-        <section>
+        <section class="banner">
             <div class="b_video">
                 <video src="{{vid_src}}" autoplay></video>
             </div>
@@ -38,7 +39,7 @@
         <!-- Intro -->
         <section class="intro">
             <div class="i_img">
-                <img src="{{intro_src}}" alt="{{intro_alt}}" />
+                <img src="{{intro_src}}" />
                 <div class="i_landing">
                     <a href="{{intro_landing_href}}">{{intro_landing_text}}</a>
                 </div>
@@ -53,13 +54,13 @@
             <ul class="i_data"></ul>
         </section>
 
-        <section>
+        <section class="ud_style">
             <!-- Service -->
             <div class="service">
                 <h2>{{service_title}}</h2>
                 <div>
                     <ul>
-                        {{service_icon}}
+                        {{service_iconHTML}}
                     </ul>
                 </div>
             </div>
@@ -67,26 +68,81 @@
             <!-- Profolio -->
             <div class="profolio">
                 <h2>{{profolio_title}}</h2>
-                <div class="profolio_layout">
-                    <ul class="profolio_slides">
-                        <li>
-                            <img src="/assets/res/主頁 2/主頁/案例A圖.jpg" />
-                        </li>
-                        <li>
-                            <img src="/assets/res/主頁 2/主頁/案例B圖.jpg" />
-                        </li>
-                        <li>
-                            <img src="/assets/res/主頁 2/主頁/案例C圖.jpg" />
-                        </li>
-                        <li>
-                            <img src="/assets/res/主頁 2/主頁/案例B圖.jpg" />
-                        </li>
-                        <!-- items mirrored twice, total of 12 -->
-                    </ul>
+                <div class="swiper swiper-setting">
+                    <div class="swiper-wrapper">{{profolio_articleHTML}}</div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
+        <!-- Hammer -->
+        <div class="signature">
+            <div>
+                <img src="/assets/res/主頁/Untitled-1 2.png" />
+            </div>
+        </div>
+        <section class="h_detail">
+            <div class="h_detail_layout">
+                <div class="h_layout1">
+                    <img src="/assets/res/主頁/Frame 2743.png" />
+                </div>
+                <div class="h_layout2">
+                    <div class="h_content">
+                        <div class="h_content_title">
+                            <h2>{{h_title}}</h2>
+                            <p>{{h_subtitle}}</p>
+                        </div>
+                        <div class="h_content_exp">
+                            <p>{{h_exp}}</p>
+                        </div>
+                    </div>
+
+                    <div class="h_content">
+                        <div class="h_content_rewards">{{h_contentHTML}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UD Intro -->
+        <section class="ud_intro">{{ud_introHTML}}</section>
+
+        <!-- Process -->
+        <section class="process">
+            <h2>{{p_title}}</h2>
+            <ul>
+                {{processHTML}}
+            </ul>
+        </section>
+
+        <!-- Collaborate  -->
+        <section class="colla">
+            <h2>{{c_title}}</h2>
+            <div>
+                <img src="{{c_icon}}" />
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="f_layout">
+                    <div class="f_logo">
+                        <img src="{{logo_src}}" />
+                    </div>
+                    <div class="f_menu">
+                        <ul>
+                            {{menu}}
+                        </ul>
+                        <ul class="f_social">
+                            {{f_icon}}
+                        </ul>
+                    </div>
+                </div>
+                <p>{{copyright}}</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="/assets/script/script.js"></script>
     </body>
 </html>

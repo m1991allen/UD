@@ -10,23 +10,23 @@
 
     // logo
     let logo_src = `/assets/res/主頁/主頁/上方logo.png`
-    let logo_text = `UD的LOGO`
+    let logo_src_f = `/assets/res/主頁/主頁/下方logo.png`
 
     // udmlink
     let udm_src = `javascript:;`
     let udm_text = `索取電子資料`
 
     // video
-    let vid_src = `./assets/res/banner_vid.mp4`
+    let vid_src = `/assets/res/pexels-affan-tech-8597294.mp4`
 
     // video icon
     let vid_icons = {
         icon1: `/assets/res/主頁 3/主頁/icon/品牌整合.svg`,
         icon2: `/assets/res/主頁 3/主頁/icon/設計規劃.svg`,
         icon3: `/assets/res/主頁 3/主頁/icon/創意發想.svg`,
-        alt1: `品牌整合`,
-        alt2: `設計規劃`,
-        alt3: `創意發想`,
+        text1: `品牌整合`,
+        text2: `設計規劃`,
+        text3: `創意發想`,
     }
 
     // intro
@@ -86,100 +86,215 @@
 
     // profolio
     let profolio_title = `-作品案例-`
-    // let profolio_article = {
-    //     // article1_src
-    // }
+    let article = [
+        `/assets/res/主頁 2/主頁/案例A圖.jpg`,
+        `/assets/res/主頁 2/主頁/案例B圖.jpg`,
+        `/assets/res/主頁 2/主頁/案例C圖.jpg`,
+        `/assets/res/主頁 2/主頁/案例B圖.jpg`,
+        `/assets/res/主頁 2/主頁/案例C圖.jpg`,
+    ]
 
-    //////
+    // chief
+    let h_title = `UNITE DESIGN `
+    let h_subtitle = `Chief Art Director`
+    let h_exp = `
+        牽猴子影業集團 ／
+        Johnnie Walker ／
+        蘇格登威士忌 ／ 
+        遊戲橋子 ／ 
+        帝雅歐集團 ／
+        合眾汽車 ／ 
+        YAMAHA ／ 
+        寶雅 ／ 
+        得利乳膠漆
+    `
+    let reward = [
+        `紅點設計BEST OF THE BEST 2022`,
+        `創作海報類金獎 2022`,
+        `創作海報類鈦金獎 2022`,
+        `紅點設計 2020`,
+        `墨西哥海報雙年 2020`,
+        `墨西哥海報雙年展 2018`,
+        `斯洛伐克海報三年展 2018`,
+        `黑秀垃圾桶制意 2007`,
+        `金蘭醬油包裝 2006`,
+        `連鎖產業鏈設計競賽 2005`,
+        `黑秀垃圾桶創意 2005`,
+    ]
+
+    // process
+    let process_title = `-服務流程-`
+    let process_icon = [
+        `/assets/res/主頁 3/主頁/icon/洽談需求.svg`,
+        `/assets/res/主頁 3/主頁/icon/提供報價.svg`,
+        `/assets/res/主頁 3/主頁/icon/合約簽訂支付訂金.svg`,
+        `/assets/res/主頁 3/主頁/icon/設計執行.svg`,
+        `/assets/res/主頁 3/主頁/icon/提案並修正設計.svg`,
+        `/assets/res/主頁 3/主頁/icon/完稿確定.svg`,
+        `/assets/res/主頁 3/主頁/icon/支付尾款.svg`,
+        `/assets/res/主頁 3/主頁/icon/集檔結案.svg`,
+    ]
+
+    // collaborate
+    let c_title = `-合作客戶-`
+    let c_icon = `/assets/res/主頁 2/主頁/客戶 icon.jpg`
+
+    // footer
+    let f_icon = [`/assets/res/主頁 2/主頁/FB icon.jpg`, `/assets/res/主頁 2/主頁/Behance icon.jpg`]
+    let copyright = `©2022 by UNITE DESIGN`
+
+    //////////////////////////////////////////////////////////////////////////////
     //// setHTML
     let menuHTML = `
-                <li>
-                    ${menu.l_about}     
-                </li>
-                <li>
-                    ${menu.l_project}                    
-                </li>
-                <li>
-                    ${menu.l_service}                      
-                </li>
-                <li>
-                    ${menu.l_contact}                       
-                </li>
-            `
-
-    let vid_iconsHTML = `
-                <li>
-                    <img src="${vid_icons.icon1}" alt="${vid_icons.alt1}" />
-                    <p>${vid_icons.alt1}</p>
-                </li>
-                <li>
-                    <img src="${vid_icons.icon2}" alt="${vid_icons.alt2}" />
-                    <p>${vid_icons.alt2}</p>
-                </li>
-                <li>
-                    <img src="${vid_icons.icon3}" alt="${vid_icons.alt3}" />
-                    <p>${vid_icons.alt3}</p>
-                </li>
-            `
-
-    let dataHTML = `
-                <li>
-                    <p id="dataB" class="data_count">${dataStart1}</p>
-                    <p>${data.dataB_text}</p>
-                </li>
-                <li>
-                    <p id="dataT" class="data_count">${dataStart2}</p>
-                    <p>${data.dataT_text}</p>
-                </li>
-                <li>
-                    <p id="dataS" class="data_count">${dataStart3}</p>
-                    <p>${data.dataS_text}</p>
-                </li>
-                <li>
-                    <p id="dataC" class="data_count">${dataStart4}</p>
-                    <p>${data.dataC_text}</p>
-                </li>
+        <li>
+            <a href="javscript:;"> ${menu.l_about} </a>   
+        </li>
+        <li>
+            <a href="javscript:;"> ${menu.l_project} </a>                  
+        </li>
+        <li>
+            <a href="javscript:;"> ${menu.l_service} </a>                    
+        </li>
+        <li>
+            <a href="javscript:;"> ${menu.l_contact} </a>                      
+        </li>
     `
 
-    let service_icon = `
+    let vid_iconsHTML = `
         <li>
-            <img src="${service_list.serviceItem1_src}" alt="">
+            <img src="${vid_icons.icon1}" />
+            <p>${vid_icons.text1}</p>
+        </li>
+        <li>
+            <img src="${vid_icons.icon2}" />
+            <p>${vid_icons.text2}</p>
+        </li>
+        <li>
+            <img src="${vid_icons.icon3}" />
+            <p>${vid_icons.text3}</p>
+        </li>
+    `
+
+    let dataHTML = `
+        <li>
+            <p id="dataB" class="data_count">${dataStart1}</p>
+            <p>${data.dataB_text}</p>
+        </li>
+        <li>
+            <p id="dataT" class="data_count">${dataStart2}</p>
+            <p>${data.dataT_text}</p>
+        </li>
+        <li>
+            <p id="dataS" class="data_count">${dataStart3}</p>
+            <p>${data.dataS_text}</p>
+        </li>
+        <li>
+            <p id="dataC" class="data_count">${dataStart4}</p>
+            <p>${data.dataC_text}</p>
+        </li>
+    `
+
+    let service_iconHTML = `
+        <li>
+            <img src="${service_list.serviceItem1_src}">
             <p>${service_list.serviceItem1}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem2_src}" alt="">
+            <img src="${service_list.serviceItem2_src}">
             <p>${service_list.serviceItem2}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem3_src}" alt="">
+            <img src="${service_list.serviceItem3_src}">
             <p>${service_list.serviceItem3}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem4_src}" alt="">
+            <img src="${service_list.serviceItem4_src}">
             <p>${service_list.serviceItem4}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem5_src}" alt="">
+            <img src="${service_list.serviceItem5_src}">
             <p>${service_list.serviceItem5}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem6_src}" alt="">
+            <img src="${service_list.serviceItem6_src}">
             <p>${service_list.serviceItem6}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem7_src}" alt="">
+            <img src="${service_list.serviceItem7_src}">
             <p>${service_list.serviceItem7}</p>
         </li>
         <li>
-            <img src="${service_list.serviceItem8_src}" alt="">
+            <img src="${service_list.serviceItem8_src}">
             <p>${service_list.serviceItem8}</p>
         </li>
     `
 
+    let profolio_articleHTML = `
+        <div class="swiper-slide"><img src="${article[0]}" /></div>
+        <div class="swiper-slide"><img src="${article[1]}" /></div>
+        <div class="swiper-slide"><img src="${article[2]}" /></div>
+        <div class="swiper-slide"><img src="${article[3]}" /></div>
+                        
+    `
+
+    let h_contentHTML = `
+        <div>
+            <ul>
+                <li>${reward[0]}</li>
+                <li>${reward[1]}</li>
+                <li>${reward[2]}</li>
+                <li>${reward[3]}</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>${reward[4]}</li>
+                <li>${reward[5]}</li>
+                <li>${reward[6]}</li>
+                <li>${reward[7]}</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>${reward[8]}</li>
+                <li>${reward[9]}</li>
+                <li>${reward[10]}</li>
+            </ul>
+        </div>
+    `
+
+    let ud_introHTML = `
+        <p>UNITE DESIGN 集結創新人才，為客戶提供品牌設計或企業訓練，包括問題 診斷，戰略思考，視覺識別設計，網站設計，直至空間形象創作計劃等，提供 完整、全面的品牌或企業整合設計服務。</p>
+        <p>我們的主要任務和目標是通過我們的設計專業向公眾傳達信息。用視覺說故 事，解決客戶營銷和廣告方面的問題外，我們還希望積極為客戶創造「品牌」 和「廣告價值」。而廣告、網路行銷和設計的三方整合和項目開發是公司最大的整合能力。針對客戶量身定制不同風格的設計呈現，創作「優秀」與「細節」 疊加「產品故事」，除了讓顧客達到商業需求外，還具有藝術審美價值的品牌， 讓設計歷久彌新。</p>
+    `
+
+    let process_iconHTML = `
+        <li><img src="${process_icon[0]}"></li>
+        <li><img src="${process_icon[1]}"></li>
+        <li><img src="${process_icon[2]}"></li>
+        <li><img src="${process_icon[3]}"></li>
+        <li><img src="${process_icon[4]}"></li>
+        <li><img src="${process_icon[5]}"></li>
+        <li><img src="${process_icon[6]}"></li>
+        <li><img src="${process_icon[7]}"></li>
+
+    `
+
+    let footer_iconHTML = `
+        <li>
+            <a href="javascript:;"><img src="${f_icon[0]}"></a>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="${f_icon[1]}"></a>
+        </li>
+
+    `
+
     document.querySelector('.h_logo img').setAttribute('src', logo_src)
-    document.querySelector('.h_logo img').setAttribute('alt', logo_text)
+    document.querySelector(`.f_logo img`).setAttribute('src', logo_src_f)
 
     document.querySelector('.menu').innerHTML = menuHTML
+    document.querySelector('.footer .f_menu ul').innerHTML = menuHTML
 
     document.querySelector('.h_udm a').setAttribute('href', udm_src)
     document.querySelector('.h_udm a').innerHTML = udm_text
@@ -198,10 +313,29 @@
     document.querySelector(`.i_data`).innerHTML = dataHTML
 
     document.querySelector(`.service h2`).innerHTML = service_title
-    document.querySelector(`.service ul`).innerHTML = service_icon
+    document.querySelector(`.service ul`).innerHTML = service_iconHTML
 
     document.querySelector(`.profolio h2`).innerHTML = profolio_title
+    document.querySelector(`.swiper-wrapper`).innerHTML = profolio_articleHTML
 
+    document.querySelector(`.h_content_title h2`).innerHTML = h_title
+    document.querySelector(`.h_content_title p`).innerHTML = h_subtitle
+    document.querySelector(`.h_content_exp p`).innerHTML = h_exp
+
+    document.querySelector(`.h_content_rewards`).innerHTML = h_contentHTML
+    document.querySelector(`.ud_intro`).innerHTML = ud_introHTML
+
+    document.querySelector(`.process h2`).innerHTML = process_title
+    document.querySelector(`.process ul`).innerHTML = process_iconHTML
+
+    document.querySelector(`.colla img`).setAttribute('src', c_icon)
+    document.querySelector(`.colla h2`).innerHTML = c_title
+
+    document.querySelector(`.footer .f_menu .f_social`).innerHTML = footer_iconHTML
+    document.querySelector(`.footer p`).innerHTML = copyright
+
+    //////////////////////////////////////////////////////////////////////////////
+    //js
     setInterval(function () {
         if (dataStart1 != data.dataBuildtime) {
             dataStart1++
@@ -235,10 +369,8 @@
         }
     }, 5)
 
-    // Swiper Setting
-    var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.swiper-setting', {
         slidesPerView: 3,
-        slidesPerColumn: 2,
         spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
