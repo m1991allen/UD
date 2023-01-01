@@ -96,6 +96,11 @@ header {
 header .h_logo {
   width: 30%;
 }
+@media screen and (max-width: 700px) {
+  header .h_logo {
+    width: 20%;
+  }
+}
 header .h_menu {
   width: 55%;
 }
@@ -141,7 +146,7 @@ header .h_udm a {
     width: 40%;
   }
   header .h_udm {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -276,9 +281,15 @@ section.data .i_data li p {
 @media screen and (max-width: 1000px) {
   section.data .i_data {
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
 }
 
+@media screen and (max-width: 700px) {
+  section.data {
+    width: 80%;
+  }
+}
 section.ud_style {
   height: 600px;
   position: relative;
@@ -374,7 +385,7 @@ section.h_detail .signature div img:nth-child(2) {
   right: -10%;
 }
 @media screen and (max-width: 800px) {
-  section.h_detail .signature div img:nth-child(2) {
+  section.h_detail .signature div img:nth-child(1) {
     width: 60%;
   }
   section.h_detail .signature div img:nth-child(2) {
@@ -552,6 +563,7 @@ section.process img {
 @media screen and (max-width: 900px) {
   section.process ul {
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 }
 

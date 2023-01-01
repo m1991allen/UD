@@ -2,10 +2,10 @@
     //資料
     // menu
     let menu = {
-        l_about: `關於 | ABOUT`,
-        l_project: `案例 | PROJECT`,
-        l_service: `服務 | SERVICE`,
-        l_contact: `聯繫 | CONTACT`,
+        l_about: `關於| ABOUT`,
+        l_project: `案例| PROJECT`,
+        l_service: `服務| SERVICE`,
+        l_contact: `聯繫| CONTACT`,
     }
 
     // logo
