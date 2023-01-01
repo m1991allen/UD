@@ -122,6 +122,7 @@ header {
             display: none;
             justify-content: flex-end;
             z-index: 100;
+            padding: 0 1rem;
         }
         @media screen and (max-width:700px){
             .h_menu_btn{
@@ -183,9 +184,11 @@ section.banner {
             }
 
             li:nth-child(2) {
-                border-right: 1px solid;
-                border-left: 1px solid;
-                padding: 0 4rem;
+                div{
+                    border-right: 1px solid;
+                    border-left: 1px solid;
+                    padding: 0 4rem;
+                }
             }
         }
         @media screen and(max-width:700px) {
@@ -196,25 +199,27 @@ section.banner {
                 justify-content: space-evenly;
                 display: block;
                 li {
-                    display: flex;
-                    justify-content: center;
-                    padding: 1rem;
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        padding: 1rem;
 
-                    img{
-                        color: var(--color-mb-icon);
+                        img{
+                            color: var(--color-mb-icon);
+                        }
                     }
-
-                    p {
-                        padding-left: 1rem;
-                    }
+                    
                 }
-
                 li:nth-child(2) {
-                    border-right: none;
-                    border-left: none;
-                    border-top: 1px solid white;
-                    border-bottom: 1px solid white;
-                    padding: 1rem;
+                    div{
+                        max-width: 300px;
+                        margin: auto;
+                        border-top: 1px solid white;
+                        border-bottom: 1px solid white;
+                        border-right: none;
+                        border-left: none;
+                        padding: 1rem;
+                    }
                 }
             }
         }
@@ -403,9 +408,13 @@ section.h_detail {
             }
             @media screen and (max-width: 800px) {
                 img:nth-child(2) {
+                    width: 60%;
+                }
+                img:nth-child(2) {
                     position: absolute;
                     top: 60%;
                     right: 0%;
+                    width: 60%;
                 }
             }
         }
@@ -425,7 +434,7 @@ section.h_detail {
     .h_detail_layout {
         color: white;
         max-width: 1400px;
-        min-height: 400px;
+        height: 400px;
         margin: auto;
         display: flex;
         align-items: center;
@@ -442,6 +451,7 @@ section.h_detail {
             @media screen and (max-width: 500px) {
                 img {
                     left: -40px;
+                    width: 250px;
                 }
             }
         }
@@ -485,7 +495,19 @@ section.h_detail {
             @media screen and (max-width: 900px) {
                 .h_content {
                     grid-template-columns: 1fr;
+                    margin: 0px;
                 }
+                
+            }
+            @media screen and (max-width: 900px) {
+                .h_content {
+                    grid-template-columns: 1fr;
+                    margin: 0px;
+                    .h_content_exp{
+                        display: none;
+                    }
+                }
+                
             }
             .h_content:nth-child(2) {
                 display: block;
@@ -524,6 +546,12 @@ section.h_detail {
             }
         }
     }
+
+    @media screen  and (max-width:700px){
+        .h_detail_layout{
+            height: 300px;
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -532,7 +560,7 @@ section.h_detail {
     }
 }
 section.ud_intro {
-    background-image: url('assets/res/主頁\ 2/主頁/文字底圖.jpg');
+    background-image: url('/assets/res/主頁2/主頁/文字底圖.jpg');
     background-size: cover;
     color: white;
     max-width: 1000px;
@@ -600,7 +628,7 @@ footer {
                 border-bottom: 1px solid white;
                 display: grid;
                 grid-template-columns: 7fr 1fr;
-                align-items: center;
+                align-items: end;
                 width: 100%;
                 margin-left: 2rem;
                 ul {
@@ -635,8 +663,16 @@ footer {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                     }
+                    
+                    }   
+                }
+                @media screen and (max-width:316px) {
+                    .menu {
+                    grid-template-columns: 1fr;
                 }
             }
+
+            
         }
         @media screen and (max-width: 600px) {
             .f_layout {
