@@ -294,7 +294,7 @@
     document.querySelector(`.f_logo img`).setAttribute('src', logo_src_f)
 
     document.querySelector('.menu').innerHTML = menuHTML
-    document.querySelector('.footer .f_menu ul').innerHTML = menuHTML
+    document.querySelector('.footer .f_menu').innerHTML = menuHTML
 
     document.querySelector('.h_udm a').setAttribute('href', udm_src)
     document.querySelector('.h_udm a').innerHTML = udm_text
@@ -318,7 +318,7 @@
     document.querySelector(`.profolio h2`).innerHTML = profolio_title
     document.querySelector(`.swiper-wrapper`).innerHTML = profolio_articleHTML
 
-    document.querySelector(`.h_content_title h2`).innerHTML = h_title
+    document.querySelector(`.h_content_title h1`).innerHTML = h_title
     document.querySelector(`.h_content_title p`).innerHTML = h_subtitle
     document.querySelector(`.h_content_exp p`).innerHTML = h_exp
 
@@ -331,11 +331,29 @@
     document.querySelector(`.colla img`).setAttribute('src', c_icon)
     document.querySelector(`.colla h2`).innerHTML = c_title
 
-    document.querySelector(`.footer .f_menu .f_social`).innerHTML = footer_iconHTML
+    document.querySelector(`.footer .menu .f_social`).innerHTML = footer_iconHTML
     document.querySelector(`.footer p`).innerHTML = copyright
 
     //////////////////////////////////////////////////////////////////////////////
     //js
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 700) {
+            document.querySelector('header .menu').style.display = 'flex'
+
+            let mb_menu_turnon = document.querySelector('.h_menu_btn img')
+            mb_menu_turnon.addEventListener('click', function () {
+                document.querySelector('header .menu').style.display = 'block'
+            })
+        } else {
+            document.querySelector('header .menu').style.display = 'none'
+        }
+
+        window.addEventListener('scroll', function () {
+            document.querySelector('header .menu').style.display = 'none'
+        })
+    })
+
     setInterval(function () {
         if (dataStart1 != data.dataBuildtime) {
             dataStart1++

@@ -15,6 +15,9 @@
                 <img src="{{logo_src}}" />
             </div>
             <div class="h_menu">
+                <div class="h_menu_btn">
+                    <img src="/assets/res/主頁/主頁/上方選單.png" />
+                </div>
                 <ul class="menu">
                     {{menu}}
                 </ul>
@@ -27,7 +30,9 @@
         <!-- Banner -->
         <section class="banner">
             <div class="b_video">
-                <video src="{{vid_src}}" autoplay></video>
+                <video autoplay loop>
+                    <source src="{{vid_src}}" />
+                </video>
             </div>
             <div class="b_icon">
                 <ul class="icon">
@@ -91,7 +96,7 @@
                 <div class="h_layout2">
                     <div class="h_content">
                         <div class="h_content_title">
-                            <h2>{{h_title}}</h2>
+                            <h1>{{h_title}}</h1>
                             <p>{{h_subtitle}}</p>
                         </div>
                         <div class="h_content_exp">
@@ -131,8 +136,8 @@
                     <div class="f_logo">
                         <img src="{{logo_src}}" />
                     </div>
-                    <div class="f_menu">
-                        <ul>
+                    <div class="menu">
+                        <ul class="f_menu">
                             {{menu}}
                         </ul>
                         <ul class="f_social">
