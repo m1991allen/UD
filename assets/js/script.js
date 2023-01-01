@@ -9,28 +9,28 @@
     }
 
     // logo
-    let logo_src = `/assets/res/主頁/主頁/上方logo.png`
-    let logo_src_f = `/assets/res/主頁/主頁/下方logo.png`
+    let logo_src = `assets/res/主頁/主頁/上方logo.png`
+    let logo_src_f = `assets/res/主頁/主頁/下方logo.png`
 
     // udmlink
     let udm_src = `javascript:;`
     let udm_text = `索取電子資料`
 
     // video
-    let vid_src = `/assets/res/pexels-affan-tech-8597294.mp4`
+    let vid_src = `assets/res/pexels-affan-tech-8597294.mp4`
 
     // video icon
     let vid_icons = {
-        icon1: `/assets/res/主頁 3/主頁/icon/品牌整合.svg`,
-        icon2: `/assets/res/主頁 3/主頁/icon/設計規劃.svg`,
-        icon3: `/assets/res/主頁 3/主頁/icon/創意發想.svg`,
+        icon1: `assets/res/主頁 3/主頁/icon/品牌整合.svg`,
+        icon2: `assets/res/主頁 3/主頁/icon/設計規劃.svg`,
+        icon3: `assets/res/主頁 3/主頁/icon/創意發想.svg`,
         text1: `品牌整合`,
         text2: `設計規劃`,
         text3: `創意發想`,
     }
 
     // intro
-    let intro_src = `/assets/res/主頁 2/主頁/年鑑圖片.jpg`
+    let intro_src = `assets/res/主頁 2/主頁/年鑑圖片.jpg`
     let intro_title = `2023 UD新年鑑`
     let intro_text = `
         <p>
@@ -74,24 +74,24 @@
         serviceItem6: `平面設計`,
         serviceItem7: `年度企劃`,
         serviceItem8: `行銷企劃`,
-        serviceItem1_src: `/assets/res/主頁 3/主頁/icon/企業識別.svg`,
-        serviceItem2_src: `/assets/res/主頁 3/主頁/icon/形象廣告.svg`,
-        serviceItem3_src: `/assets/res/主頁 3/主頁/icon/網站設計.svg`,
-        serviceItem4_src: `/assets/res/主頁 3/主頁/icon/動畫製作.svg`,
-        serviceItem5_src: `/assets/res/主頁 3/主頁/icon/插畫設計.svg`,
-        serviceItem6_src: `/assets/res/主頁 3/主頁/icon/平面設計.svg`,
-        serviceItem7_src: `/assets/res/主頁 3/主頁/icon/年度企劃.svg`,
-        serviceItem8_src: `/assets/res/主頁 3/主頁/icon/行銷企劃.svg`,
+        serviceItem1_src: `assets/res/主頁 3/主頁/icon/企業識別.svg`,
+        serviceItem2_src: `assets/res/主頁 3/主頁/icon/形象廣告.svg`,
+        serviceItem3_src: `assets/res/主頁 3/主頁/icon/網站設計.svg`,
+        serviceItem4_src: `assets/res/主頁 3/主頁/icon/動畫製作.svg`,
+        serviceItem5_src: `assets/res/主頁 3/主頁/icon/插畫設計.svg`,
+        serviceItem6_src: `assets/res/主頁 3/主頁/icon/平面設計.svg`,
+        serviceItem7_src: `assets/res/主頁 3/主頁/icon/年度企劃.svg`,
+        serviceItem8_src: `assets/res/主頁 3/主頁/icon/行銷企劃.svg`,
     }
 
     // profolio
     let profolio_title = `-作品案例-`
     let article = [
-        `/assets/res/主頁 2/主頁/案例A圖.jpg`,
-        `/assets/res/主頁 2/主頁/案例B圖.jpg`,
-        `/assets/res/主頁 2/主頁/案例C圖.jpg`,
-        `/assets/res/主頁 2/主頁/案例B圖.jpg`,
-        `/assets/res/主頁 2/主頁/案例C圖.jpg`,
+        `assets/res/主頁 2/主頁/案例A圖.jpg`,
+        `assets/res/主頁 2/主頁/案例B圖.jpg`,
+        `assets/res/主頁 2/主頁/案例C圖.jpg`,
+        `assets/res/主頁 2/主頁/案例B圖.jpg`,
+        `assets/res/主頁 2/主頁/案例C圖.jpg`,
     ]
 
     // chief
@@ -125,22 +125,22 @@
     // process
     let process_title = `-服務流程-`
     let process_icon = [
-        `/assets/res/主頁 3/主頁/icon/洽談需求.svg`,
-        `/assets/res/主頁 3/主頁/icon/提供報價.svg`,
-        `/assets/res/主頁 3/主頁/icon/合約簽訂支付訂金.svg`,
-        `/assets/res/主頁 3/主頁/icon/設計執行.svg`,
-        `/assets/res/主頁 3/主頁/icon/提案並修正設計.svg`,
-        `/assets/res/主頁 3/主頁/icon/完稿確定.svg`,
-        `/assets/res/主頁 3/主頁/icon/支付尾款.svg`,
-        `/assets/res/主頁 3/主頁/icon/集檔結案.svg`,
+        `assets/res/主頁 3/主頁/icon/洽談需求.svg`,
+        `assets/res/主頁 3/主頁/icon/提供報價.svg`,
+        `assets/res/主頁 3/主頁/icon/合約簽訂支付訂金.svg`,
+        `assets/res/主頁 3/主頁/icon/設計執行.svg`,
+        `assets/res/主頁 3/主頁/icon/提案並修正設計.svg`,
+        `assets/res/主頁 3/主頁/icon/完稿確定.svg`,
+        `assets/res/主頁 3/主頁/icon/支付尾款.svg`,
+        `assets/res/主頁 3/主頁/icon/集檔結案.svg`,
     ]
 
     // collaborate
     let c_title = `-合作客戶-`
-    let c_icon = `/assets/res/主頁 2/主頁/客戶 icon.jpg`
+    let c_icon = `assets/res/主頁 2/主頁/客戶 icon.jpg`
 
     // footer
-    let f_icon = [`/assets/res/主頁 2/主頁/FB icon.jpg`, `/assets/res/主頁 2/主頁/Behance icon.jpg`]
+    let f_icon = [`assets/res/主頁 2/主頁/FB icon.jpg`, `assets/res/主頁 2/主頁/Behance icon.jpg`]
     let copyright = `©2022 by UNITE DESIGN`
 
     //////////////////////////////////////////////////////////////////////////////
