@@ -4,156 +4,104 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ud官網</title>
-        <meta property="og:site_name" content="ud官網" />
-        <meta property="og:title" content="ud官網" />
-        <meta property="og:description" content="ud官網。" />
+        <title>UD官網</title>
+        <meta property="og:site_name" content="UD官網" />
+        <meta property="og:title" content="UD官網" />
+        <meta property="og:description" content="UD官網。" />
         <meta property="og:locale" content="zh_TW" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     </head>
     <body>
-        <!-- header -->
         <header>
-            <div class="h_logo">
-                <img src="{{logo_src}}" />
+            <div>
+                <img src="./assets/res/Logo/Normal.jpg" alt="" />
             </div>
-            <div class="h_menu">
-                <div class="h_menu_btn">
-                    <img src="assets/res/主頁/主頁/上方選單.png" />
-                </div>
-                <ul class="menu">
-                    {{menu}}
-                </ul>
+            <div class="navigation">
+                <nav>
+                    <ul class="menu_navigation">
+                        <li><a href="javascript:;">關於｜ABOUT</a></li>
+                        <li><a href="javascript:;">案例｜PROJECTS</a></li>
+                        <li><a href="javascript:;">服務｜SERVICE</a></li>
+                        <li><a href="javascript:;">聯繫｜CONTACT</a></li>
+                    </ul>
+                    <ul class="menu_socialicon">
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="./assets/res/Property 1=Behance, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="./assets/res/Property 1=Ins, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="./assets/res/Property 1=FB, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="h_udm">
-                <a href="{{udm_src}}">{{udm_text}}</a>
+            <div id="btnBurger">
+                <img src="./assets/res/Property 1=Menu, Property 2=Normal.png" alt="" />
             </div>
         </header>
-
         <!-- Banner -->
-        <section class="banner">
-            <div class="b_video">
-                <video autoplay loop>
-                    <source src="{{vid_src}}" />
-                </video>
-            </div>
-            <div class="b_icon">
-                <ul class="icon">
-                    {{vid_iconHTML}}
-                </ul>
-            </div>
-        </section>
-
-        <!-- Intro -->
-        <section class="intro">
-            <div class="i_img">
-                <img src="{{intro_src}}" />
-                <div class="i_landing">
-                    <a href="{{intro_landing_href}}">{{intro_landing_text}}</a>
-                </div>
-            </div>
-            <div class="i_text">
-                <h2>{{intro_title}}</h2>
-                <article>{{intro_text}}</article>
-            </div>
-        </section>
-
-        <section class="data">
-            <ul class="i_data"></ul>
-        </section>
-
-        <section class="ud_style">
-            <!-- Service -->
-            <div class="service">
-                <h2>{{service_title}}</h2>
-                <div>
-                    <ul>
-                        {{service_iconHTML}}
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Profolio -->
-            <div class="profolio">
-                <h2>{{profolio_title}}</h2>
-                <div class="swiper swiper-setting">
-                    <div class="swiper-wrapper">{{profolio_articleHTML}}</div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Hammer -->
-
-        <section class="h_detail">
-            <div class="signature">
-                <div>
-                    <img src="assets/res/主頁/Untitled-1 2.png" />
-                    <img src="assets/res/主頁/紅點得獎logo.png" />
-                </div>
-            </div>
-            <div class="h_detail_layout">
-                <div class="h_layout1">
-                    <img src="assets/res/主頁/Frame 2743.png" />
-                </div>
-                <div class="h_layout2">
-                    <div class="h_content">
-                        <div class="h_content_title">
-                            <h1>{{h_title}}</h1>
-                            <p>{{h_subtitle}}</p>
-                        </div>
-                        <div class="h_content_exp">
-                            <p>{{h_exp}}</p>
-                        </div>
-                    </div>
-
-                    <div class="h_content">
-                        <div class="h_content_rewards">{{h_contentHTML}}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- UD Intro -->
-        <section class="ud_intro">{{ud_introHTML}}</section>
-
-        <!-- Process -->
-        <section class="process">
-            <h2>{{p_title}}</h2>
-            <ul>
-                {{processHTML}}
-            </ul>
-        </section>
-
-        <!-- Collaborate  -->
-        <section class="colla">
-            <h2>{{c_title}}</h2>
+        <section class="layout_banner">
             <div>
-                <img src="{{c_icon}}" />
+                <img src="./assets/res/Banner.jpg" alt="" />
+            </div>
+            <div class="layout_banner_content">
+                <div>
+                    <h6>We put a premium on visual storytelling</h6>
+                    <p>為客戶創造“品牌”和“廣告價值”</p>
+                    <a href="">Play Showreel</a>
+                </div>
             </div>
         </section>
-
-        <footer>
-            <div class="footer">
-                <div class="f_layout">
-                    <div class="f_logo">
-                        <img src="{{logo_src}}" />
+        <!-- Content -->
+        <section class="layout_service">
+            <h2>SERVICE</h2>
+            <p>從策略到設計 我們為你每個階段提供最專業的解決方案</p>
+            <div class="layout_service_content">
+                <div class="layout">
+                    <div class="layout_flex">
+                        <img src="./assets/res/SERVICE/Icon1.png" alt="" />
+                        <div>
+                            <h3>> 品牌整合<span>Strategy</span></h3>
+                            <p>藉由深化的使用者經驗探索，為品牌建構更加精準的策略與價值傳遞。</p>
+                            <p>品牌定位策略 | 品牌體驗策略 | 品牌命名與標語 | 品牌故事與創意文案</p>
+                        </div>
                     </div>
-                    <div class="menu">
-                        <ul class="f_menu">
-                            {{menu}}
-                        </ul>
-                        <ul class="f_social">
-                            {{f_icon}}
-                        </ul>
+                    <div class="layout_flex">
+                        <img src="./assets/res/SERVICE/Icon2.png" alt="" />
+                        <div>
+                            <h3>> 創意發想<span>Creativity</span></h3>
+                            <p>我們以體驗思維為中心，深度了解顧客行為，為品牌挖掘痛點並找尋機會。</p>
+                            <p>企業訪查 | 市場研究 | 使用者與消費者訪談 | 設計思考工作坊</p>
+                        </div>
+                    </div>
+                    <div class="layout_flex">
+                        <img src="./assets/res/SERVICE/Icon3.png" alt="" />
+                        <div>
+                            <h3>> 設計規劃<span>Design</span></h3>
+                            <p>為品牌提供因應當代多元載體的跨領域整合，讓品牌策略實踐於優秀的視覺設計之上。</p>
+                            <p>
+                                品牌標誌設計 | CIS 品牌識別系統 | 產品包裝設計 | 動態影像設計 | 網站介面設計 |
+                                其他設計項目
+                            </p>
+                        </div>
+                    </div>
+                    <div class="layout_link">
+                        <a href="javascript:;">Explore More</a>
                     </div>
                 </div>
-                <p>{{copyright}}</p>
             </div>
-        </footer>
-
+        </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/44e5d9f0d5.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
     </body>
 </html>
