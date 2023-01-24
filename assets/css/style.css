@@ -5,6 +5,9 @@
   margin: 0px;
   padding: 0px;
   transition: 0.3s;
+  height: 100%;
+  position: relative;
+  --swiper-theme-color: black;
   --Primary_color: black;
   --Primary_font_color: #292929;
   --Heading1_pc_32: 32px;
@@ -20,43 +23,52 @@
   --Content2_mb_14: 14px;
   --Content3_mb_12: 12px;
 }
-:root body {
-  margin: 0;
+
+body {
+  height: 100%;
+  position: relative;
 }
-:root a {
+
+a {
   color: var(--Primary_color);
   text-decoration: none;
 }
-:root ul {
+
+ul {
   padding: 0;
   list-style: none;
 }
-:root div {
+
+div {
   box-sizing: border-box;
 }
-:root section.layout_service {
+
+section.layout_service {
   margin: 15rem 0px;
 }
-:root h1,
-:root h2,
-:root h3,
-:root h4,
-:root h5,
-:root h6,
-:root a,
-:root p,
-:root ul,
-:root li {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li {
   color: var(--Primary_font_color);
 }
-:root h2 {
+
+h2 {
   font-size: var(--Heading1_pc_32);
   text-align: center;
   letter-spacing: 3px;
   margin: 1rem 0;
 }
-:root header,
-:root footer {
+
+header,
+footer {
   max-width: 1300px;
   height: 78px;
   display: flex;
@@ -65,65 +77,66 @@
   margin: auto;
   padding: 0 1rem;
 }
-:root header .navigation,
-:root footer .navigation {
+header .navigation,
+footer .navigation {
   display: block;
 }
-:root header .navigation nav,
-:root footer .navigation nav {
+header .navigation nav,
+footer .navigation nav {
   display: flex;
   align-items: center;
   z-index: 99;
 }
-:root header .navigation nav ul.menu_navigation,
-:root footer .navigation nav ul.menu_navigation {
+header .navigation nav ul.menu_navigation,
+footer .navigation nav ul.menu_navigation {
   display: flex;
   align-items: center;
 }
-:root header .navigation nav ul.menu_navigation li,
-:root footer .navigation nav ul.menu_navigation li {
+header .navigation nav ul.menu_navigation li,
+footer .navigation nav ul.menu_navigation li {
   padding: 0.7rem;
   font-size: var(--Content2_pc_16);
 }
-:root header .navigation nav ul.menu_socialicon,
-:root footer .navigation nav ul.menu_socialicon {
+header .navigation nav ul.menu_socialicon,
+footer .navigation nav ul.menu_socialicon {
   display: flex;
   align-items: center;
   padding-left: 1rem;
 }
-:root header .navigation nav ul.menu_socialicon li,
-:root footer .navigation nav ul.menu_socialicon li {
+header .navigation nav ul.menu_socialicon li,
+footer .navigation nav ul.menu_socialicon li {
   padding-left: 0.3rem;
 }
-:root header #btnBurger,
-:root footer #btnBurger {
+header #btnBurger,
+footer #btnBurger {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  :root header .navigation,
-:root footer .navigation {
+  header .navigation,
+footer .navigation {
     display: none;
   }
-  :root header .navigation ul,
-:root footer .navigation ul {
+  header .navigation ul,
+footer .navigation ul {
     width: 130px;
   }
-  :root header .navigation ul a,
-:root footer .navigation ul a {
+  header .navigation ul a,
+footer .navigation ul a {
     color: white;
   }
-  :root header #btnBurger,
-:root footer #btnBurger {
+  header #btnBurger,
+footer #btnBurger {
     display: block;
   }
 }
-:root .layout_banner {
+
+.layout_banner {
   position: relative;
 }
-:root .layout_banner img {
+.layout_banner img {
   width: 100%;
 }
-:root .layout_banner .layout_banner_content {
+.layout_banner .layout_banner_content {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.85);
   top: 33%;
@@ -134,16 +147,16 @@
   flex-direction: column;
   justify-content: center;
 }
-:root .layout_banner .layout_banner_content div {
+.layout_banner .layout_banner_content div {
   margin: 0 9rem;
 }
-:root .layout_banner .layout_banner_content div h6 {
+.layout_banner .layout_banner_content div h6 {
   font-family: "Roboto";
   font-size: 38px;
   margin: 0;
   line-height: 3rem;
 }
-:root .layout_banner .layout_banner_content div a {
+.layout_banner .layout_banner_content div a {
   display: block;
   text-align: center;
   font-size: var(--Content3_pc_14);
@@ -153,30 +166,31 @@
   background-color: #fff;
   box-shadow: 2px 5px 10px #a2a2a2;
 }
+
 @media screen and (max-width: 670px) {
-  :root .layout_banner .layout_banner_content {
+  .layout_banner .layout_banner_content {
     width: 90%;
     height: 200px;
     top: 85%;
     left: 50%;
     transform: translateX(-50%);
   }
-  :root .layout_banner .layout_banner_content div {
+  .layout_banner .layout_banner_content div {
     margin: 0 5rem;
     text-align: center;
   }
-  :root .layout_banner .layout_banner_content div h6 {
+  .layout_banner .layout_banner_content div h6 {
     font-size: 20px;
     line-height: 2rem;
   }
-  :root .layout_banner .layout_banner_content div p {
+  .layout_banner .layout_banner_content div p {
     font-size: var(--Content2_mb_14);
   }
-  :root .layout_banner .layout_banner_content div a {
+  .layout_banner .layout_banner_content div a {
     margin: auto;
   }
 }
-:root .layout_service p {
+.layout_service p {
   font-size: var(--Content2_pc_16);
   text-align: center;
   width: 300px;
@@ -185,42 +199,42 @@
   letter-spacing: 3.5px;
   font-family: "Roboto";
 }
-:root .layout_service .layout_service_content {
+.layout_service .layout_service_content {
   max-width: 1000px;
   margin: 7rem auto;
 }
-:root .layout_service .layout_service_content .layout {
+.layout_service .layout_service_content .layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
 }
-:root .layout_service .layout_service_content .layout .layout_flex {
+.layout_service .layout_service_content .layout .layout_flex {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
 }
-:root .layout_service .layout_service_content .layout .layout_flex h3 {
+.layout_service .layout_service_content .layout .layout_flex h3 {
   font-size: var(--Heading3_pc_20);
   letter-spacing: 2.5px;
   margin-top: 0;
 }
-:root .layout_service .layout_service_content .layout .layout_flex h3 span {
+.layout_service .layout_service_content .layout .layout_flex h3 span {
   font-size: var(--Content3_pc_14);
   margin: 0 1rem;
 }
-:root .layout_service .layout_service_content .layout .layout_flex p {
+.layout_service .layout_service_content .layout .layout_flex p {
   font-size: var(--Content3_pc_14);
   text-align: left;
   margin-bottom: 1rem;
   letter-spacing: 2.5px;
 }
-:root .layout_service .layout_service_content .layout .layout_link {
+.layout_service .layout_service_content .layout .layout_link {
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
 }
-:root .layout_service .layout_service_content .layout .layout_link a {
+.layout_service .layout_service_content .layout .layout_link a {
   box-shadow: 0px 3px 3px #a2a2a2;
   border: 1px solid;
   padding: 0.5rem 2rem;
@@ -228,32 +242,106 @@
   background-color: #fff;
 }
 @media screen and (max-width: 670px) {
-  :root .layout_service .layout_service_content .layout {
+  .layout_service .layout_service_content .layout {
     grid-template-columns: 1fr;
   }
-  :root .layout_service .layout_service_content .layout .layout_flex h3 {
+  .layout_service .layout_service_content .layout .layout_flex h3 {
     font-size: var(--Heading2_mb_18);
   }
-  :root .layout_service .layout_service_content .layout .layout_flex h3 span {
+  .layout_service .layout_service_content .layout .layout_flex h3 span {
     font-size: var(--Content3_mb_12);
     margin: 0 1rem;
   }
-  :root .layout_service .layout_service_content .layout .layout_flex p {
+  .layout_service .layout_service_content .layout .layout_flex p {
     font-size: var(--Content3_mb_12);
   }
-  :root .layout_service .layout_service_content .layout .layout_link {
+  .layout_service .layout_service_content .layout .layout_link {
     align-items: center;
   }
 }
+
 @media screen and (max-width: 670px) {
-  :root .layout_service {
+  .layout_service {
     margin-top: 15rem;
   }
-  :root .layout_service h2 {
+  .layout_service h2 {
     font-size: var(--Heading3_pc_20);
   }
-  :root .layout_service p {
+  .layout_service p {
     font-size: var(--Content3_mb_12);
     line-height: 19px;
+  }
+}
+.layout_project {
+  height: 100%;
+  position: relative;
+}
+.layout_project h2 {
+  text-align: center;
+}
+.layout_project p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.layout_project .layout_link {
+  margin: 3rem 0;
+  text-align: center;
+}
+.layout_project .layout_link a {
+  box-shadow: 0px 3px 3px #a2a2a2;
+  border: 1px solid;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  background-color: #fff;
+}
+.layout_project .mobile-profolio {
+  display: none;
+}
+
+.swiper {
+  width: 670px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev::after {
+  content: "\e5cb";
+  font-family: "Material Icons";
+}
+
+.swiper-button-next::after {
+  content: "\e5cc";
+  font-family: "Material Icons";
+}
+
+.swiper-pagination {
+  bottom: -2px !important;
+}
+
+@media screen and (max-width: 670px) {
+  .layout_project .mobile-profolio {
+    display: block;
+    width: 100%;
+  }
+  .layout_project .mobile-profolio img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .layout_project .swiper {
+    display: none;
   }
 }
