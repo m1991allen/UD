@@ -1,58 +1,4 @@
-﻿;(function () {
-    // swiper
-    //     // 響應
-    //     // setInterval(() => {
-    //     //     if (dataStart1 != data.dataBuildtime) {
-    //     //         dataStart1++
-    //     //         document.querySelector('#dataB').innerHTML = dataStart1
-    //     //     } else {
-    //     //         clearInterval()
-    //     //     }
-    //     // }, 1)
-    //     // setInterval(() => {
-    //     //     if (dataStart2 != data.dataTeamMember) {
-    //     //         dataStart2++
-    //     //         document.querySelector('#dataT').innerHTML = dataStart2 + '+'
-    //     //     } else {
-    //     //         clearInterval()
-    //     //     }
-    //     // }, 300)
-    //     // setInterval(() => {
-    //     //     if (dataStart3 != data.dataServices) {
-    //     //         dataStart3++
-    //     //         document.querySelector('#dataS').innerHTML = dataStart3 + '+'
-    //     //     } else {
-    //     //         clearInterval()
-    //     //     }
-    //     // }, 1000)
-    //     // setInterval(() => {
-    //     //     if (dataStart4 != data.dataCase) {
-    //     //         dataStart4++
-    //     //         document.querySelector('#dataC').innerHTML = dataStart4
-    //     //     } else {
-    //     //         clearInterval()
-    //     //     }
-    //     // }, 5)
-    //     // var swiper = new Swiper('.swiper-setting', {
-    //     //     slidesPerView: 1,
-    //     //     spaceBetween: 10,
-    //     //     pagination: {
-    //     //         el: '.swiper-pagination',
-    //     //         clickable: true,
-    //     //     },
-    //     //     breakpoints: {
-    //     //         768: {
-    //     //             slidesPerView: 1,
-    //     //             spaceBetween: 10,
-    //     //         },
-    //     //         1300: {
-    //     //             slidesPerView: 3,
-    //     //             spaceBetween: 10,
-    //     //         },
-    //     //     },
-    //     // })
-})()
-
+﻿// SETTING: 手機版選單
 const btnBurger = document.querySelector('#btnBurger')
 const nav = document.querySelector('.navigation')
 const navMenu = document.querySelector('.navigation nav')
@@ -80,13 +26,14 @@ btnBurger.addEventListener('click', () => {
         display: block; 
         position: absolute;
         right:5%;
-        background-color: #2C2B2B;
+        background-color: #2c2b2bdb;
     `
     navMenu_ul.style.cssText = `
         display: block;
     `
 })
 
+// SETTING:Swiper Slider
 var swiper = new Swiper('.swiper-profolio', {
     slidesPerView: 2,
     grid: {
@@ -102,3 +49,62 @@ var swiper = new Swiper('.swiper-profolio', {
         clickable: true,
     },
 })
+
+// SETTING:Swiper Slider
+var swiper = new Swiper('.swiper-clients', {
+    slidesPerView: 1,
+    grid: {
+        rows: 1,
+    },
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+
+// SETTING: data數字遞增
+let data_coop = 136 //合作廠商
+let data_service = 8 //服務類型
+let data_team = 37 //團隊人員
+let data_case = 868 //承接案件
+let data_start1 = 0,
+    data_start2 = 0,
+    data_start3 = 0,
+    data_start4 = 0
+
+setInterval(() => {
+    if (data_start1 != data_coop) {
+        data_start1++
+        document.querySelector('#data_coop').innerHTML = data_start1
+    } else {
+        clearInterval()
+    }
+}, 60)
+
+setInterval(() => {
+    if (data_start2 != data_service) {
+        data_start2++
+        document.querySelector('#data_service').innerHTML = data_start2 + '+'
+    } else {
+        clearInterval()
+    }
+}, 800)
+
+setInterval(() => {
+    if (data_start3 != data_team) {
+        data_start3++
+        document.querySelector('#data_team').innerHTML = data_start3 + '+'
+    } else {
+        clearInterval()
+    }
+}, 200)
+
+setInterval(() => {
+    if (data_start4 != data_case) {
+        data_start4++
+        document.querySelector('#data_case').innerHTML = data_start4
+    } else {
+        clearInterval()
+    }
+}, 10)
