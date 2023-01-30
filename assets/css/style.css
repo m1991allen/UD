@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap");
 :root {
-  font-family: "Noto Sans TC", Roboto, 蘋果儷中黑, 微軟正黑體;
+  font-family: "Roboto", "Noto Sans TC", 蘋果儷中黑, 微軟正黑體, sans-serif;
   box-sizing: border-box;
   transition: 0.3s;
   height: 100%;
@@ -53,7 +54,6 @@ a {
 
 h2 {
   font-size: var(--Heading1_pc_32);
-  font-family: "Roboto";
   font-weight: 500;
   text-align: center;
   line-height: 37.5px;
@@ -164,7 +164,6 @@ hr {
   margin: 0 7rem;
 }
 .layout_banner .layout_banner_content div h6 {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 38px;
   line-height: 44.53px;
@@ -172,7 +171,6 @@ hr {
   margin: 0;
 }
 .layout_banner .layout_banner_content div p {
-  font-family: "Noto Sans TC";
   font-weight: 300;
   font-size: var(--Content1_pc_18);
   line-height: 26.06px;
@@ -223,7 +221,6 @@ hr {
 }
 .layout_service .layout_service_title p {
   font-size: var(--Content2_pc_16);
-  font-family: "Noto Sans TC";
   font-weight: 300;
   line-height: 22px;
   letter-spacing: 3.5px;
@@ -246,7 +243,6 @@ hr {
   margin: 0 2rem;
 }
 .layout_service .layout_service_content .layout_grid .layout_flex h3 {
-  font-family: "Noto Sans TC";
   font-weight: 500;
   font-size: var(--Heading3_pc_20);
   line-height: 28.96px;
@@ -254,7 +250,6 @@ hr {
   margin: 0 2rem;
 }
 .layout_service .layout_service_content .layout_grid .layout_flex h3 span {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: var(--Content3_pc_14);
   line-height: 20px;
@@ -262,7 +257,6 @@ hr {
   margin-left: 1rem;
 }
 .layout_service .layout_service_content .layout_grid .layout_flex p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: var(--Content3_pc_14);
   line-height: 20px;
@@ -319,7 +313,6 @@ hr {
 }
 .layout_project p {
   font-size: var(--Content2_pc_16);
-  font-family: "Noto Sans TC";
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 3.5px;
@@ -418,7 +411,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Noto Sans TC";
   background-color: #f2f2f2;
   height: 830px;
 }
@@ -468,13 +460,8 @@ hr {
   margin: 0;
 }
 .layout_chief .layout_chief_content .profolio ul li p:nth-child(1) {
-  font-family: "Roboto";
   color: #797979;
 }
-.layout_chief .layout_chief_content .profolio ul li p:nth-child(2) {
-  font-family: "Noto Sans TC";
-}
-
 @media screen and (max-width: 670px) {
   .layout_chief {
     display: block;
@@ -516,14 +503,12 @@ hr {
 }
 .layout_do h2 {
   font-size: var(--Heading1_pc_32);
-  font-family: "Roboto";
   letter-spacing: 1px;
   line-height: 37.5px;
   color: white;
 }
 .layout_do p {
   font-size: var(--Content2_pc_16);
-  font-family: "Noto Sans TC";
   letter-spacing: 3.5px;
   line-height: 22px;
   text-align: center;
@@ -543,6 +528,7 @@ hr {
 }
 .layout_do .layout_do_icon div {
   text-align: center;
+  height: 180px;
 }
 .layout_do .layout_do_icon div:nth-child(1),
 .layout_do .layout_do_icon div:nth-child(2),
@@ -605,7 +591,6 @@ hr {
   margin: 10rem 0;
 }
 .layout_yb .layout_yb_title h2 {
-  font-family: "Noto Sans TC";
   font-weight: 500;
   font-size: var(--Heading1_pc_32);
   line-height: 41.86px;
@@ -614,7 +599,6 @@ hr {
   text-align: left;
 }
 .layout_yb .layout_yb_title h3 {
-  font-family: "Noto Sans TC";
   font-weight: 400;
   font-size: 22px;
   line-height: 31.86px;
@@ -667,14 +651,12 @@ hr {
   text-align: center;
 }
 .layout_clients h2 {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: var(--Heading1_pc_32);
   line-height: 37.5px;
   letter-spacing: 1px;
 }
 .layout_clients p {
-  font-family: "Noto Sans TC";
   font-weight: 400;
   font-size: var(--Content2_pc_16);
   line-height: 22px;
