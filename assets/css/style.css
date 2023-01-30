@@ -121,6 +121,10 @@ header #btnBurger {
   }
   header .navigation nav ul a {
     color: white;
+    font-size: var(--Content3_mb_12);
+  }
+  header .navigation nav ul:nth-child(2) {
+    padding-top: 0;
   }
   header #btnBurger {
     display: block;

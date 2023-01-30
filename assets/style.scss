@@ -115,7 +115,11 @@ header {
                     width: 130px;
                     a {
                         color: white;
+                        font-size: var(--Content3_mb_12);
                     }
+                }
+                ul:nth-child(2) {
+                    padding-top: 0;
                 }
             }
         }
