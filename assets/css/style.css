@@ -739,6 +739,15 @@ hr {
 .layout_work .layout_work_content .layout_work_form .form_social {
   margin-top: 1rem;
 }
+.layout_work .layout_work_content .layout_work_title .form_social ul,
+.layout_work .layout_work_content .layout_work_form .form_social ul {
+  display: flex;
+  padding: 0;
+}
+.layout_work .layout_work_content .layout_work_title .form_social ul li,
+.layout_work .layout_work_content .layout_work_form .form_social ul li {
+  padding: 0 5px;
+}
 
 @media screen and (max-width: 670px) {
   .layout_work {

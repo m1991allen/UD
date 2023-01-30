@@ -781,6 +781,13 @@ hr {
             }
             .form_social {
                 margin-top: 1rem;
+                ul {
+                    display: flex;
+                    padding: 0;
+                    li {
+                        padding: 0 5px;
+                    }
+                }
             }
         }
     }
@@ -834,7 +841,6 @@ footer {
         display: none;
     }
 }
-
 @media screen and(max-width:670px) {
     footer {
         font-size: var(--Content3_mb_12);
