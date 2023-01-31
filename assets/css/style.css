@@ -75,6 +75,11 @@ h2 {
   font-size: var(--Content3_pc_14);
 }
 
+.landing_link:hover a {
+  background-color: var(--Primary_color);
+  color: white;
+}
+
 header {
   max-width: 1300px;
   height: 78px;
@@ -99,6 +104,10 @@ header .navigation nav ul.menu_navigation {
 header .navigation nav ul.menu_navigation li {
   padding: 0.7rem;
   font-size: var(--Content2_pc_16);
+  transition: 0.1s !important;
+}
+header .navigation nav ul.menu_navigation li:hover {
+  font-size: 17px;
 }
 header .navigation nav ul.menu_socialicon {
   display: flex;
@@ -181,6 +190,10 @@ hr {
   margin: 2rem 0;
   background-color: #fff;
   box-shadow: 2px 5px 10px #a2a2a2;
+}
+.layout_banner .layout_banner_content div a:hover {
+  background-color: var(--Primary_color);
+  color: white;
 }
 
 @media screen and (max-width: 670px) {
@@ -678,6 +691,7 @@ hr {
 .layout_work {
   background-image: url("../res/contact_bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   padding: 5rem;
 }
 .layout_work .layout_work_content {
@@ -734,6 +748,11 @@ hr {
   border: none;
   height: 40px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.layout_work .layout_work_content .layout_work_title #submit:hover,
+.layout_work .layout_work_content .layout_work_form #submit:hover {
+  background-color: var(--Primary_color);
 }
 .layout_work .layout_work_content .layout_work_title .form_social,
 .layout_work .layout_work_content .layout_work_form .form_social {
