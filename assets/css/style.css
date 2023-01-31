@@ -11,6 +11,7 @@
   --Primary_font_color: #cccccc;
   --Primary_back_color: #232323;
   --Primary_btn_color: #4b4b4b;
+  --Secondary_back_color: #4c4948;
   --Heading1_pc_32: 32px;
   --Heading2_pc_24: 24px;
   --Heading3_pc_20: 20px;
@@ -53,6 +54,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  position: absolute;
+  top: -9999px;
+}
+
 h2 {
   font-size: var(--Heading1_pc_32);
   font-weight: 500;
@@ -78,6 +84,41 @@ h2 {
 .landing_link:hover a {
   background-color: var(--Primary_color);
   color: white;
+}
+
+.addition#btn_gotop {
+  display: flex;
+  border-radius: 90%;
+  font-size: 42px;
+  line-height: 35px;
+  color: white;
+  background-color: #d9d9d9;
+  box-shadow: 0px 3px 5px rgba(42, 30, 30, 0.4117647059);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  transition: 0.3s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.addition#btn_contact {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  border: 1px solid;
+  border-radius: 10px 0 0 10px;
+  padding: 0.7rem 0.3rem;
+  background-color: #fff;
+  z-index: 999;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.addition#btn_contact span:nth-child(2) {
+  display: table-caption;
+  padding-left: 3px;
 }
 
 header {
@@ -840,5 +881,81 @@ footer hr {
     display: block;
     border-top: 1px solid whi;
     margin: 1rem;
+  }
+}
+.s_banner {
+  background-image: url(/assets/res/02桌機關於/Frame\ 1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 347px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s_banner h2 {
+  color: white;
+}
+
+.s_breadcrumb {
+  margin: 5rem 2rem;
+}
+.s_breadcrumb a {
+  color: #716f6f;
+}
+.s_breadcrumb a:hover {
+  color: var(--Primary_color);
+}
+
+@media screen and (max-width: 670px) {
+  .s_breadcrumb {
+    display: none;
+  }
+}
+.layout_content_about {
+  background-color: var(--Secondary_back_color);
+  max-width: 1050px;
+  margin: auto;
+  padding: 8rem;
+}
+.layout_content_about p {
+  font-family: "Noto Sans TC";
+  font-size: var(--Content1_pc_18);
+  font-weight: 400;
+  line-height: 27.36px;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0.3rem;
+}
+.layout_content_about p:nth-child(3) {
+  font-family: "Roboto";
+  font-size: var(--Content2_pc_16);
+  letter-spacing: 1px;
+  margin-top: 6rem;
+}
+
+.layout_content_about_grid {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+.layout_content_about_grid div {
+  margin: 10rem 3rem;
+}
+.layout_content_about_grid div:nth-child(1) {
+  text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+  .layout_content_about {
+    padding: 3rem;
+  }
+  .layout_content_about_grid {
+    width: 100%;
+    display: block;
+  }
+  .layout_content_about_grid div {
+    margin: 5rem 3rem;
   }
 }
