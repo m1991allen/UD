@@ -9,7 +9,10 @@
         <meta property="og:title" content="UD官網" />
         <meta property="og:description" content="UD官網。" />
         <meta property="og:locale" content="zh_TW" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
@@ -46,18 +49,89 @@
                 </nav>
             </div>
             <div id="btnBurger">
-                <img src="./assets/res/01桌機主頁/01桌機主頁/Property 1=Menu, Property 2=Normal.png" alt="" />
+                <img src="./assets/res/01桌機主頁/Property 1=Menu, Property 2=Normal.png" alt="" />
             </div>
         </header>
-        <h1>UNITE DESIGN - ABOUT</h1>
+        <h1>UNITE DESIGN - PROJECT</h1>
         <div class="addition" id="btn_gotop">
-            <span>&#9652;</span>
+            <span class="material-symbols-outlined"> arrow_drop_up </span>
         </div>
         <div class="addition" id="btn_contact">
-            <span class="material-icons">phone</span>
+            <span class="material-symbols-outlined"> call </span>
             <span>立即聯絡</span>
         </div>
+        <!-- BANNER -->
+        <div class="subpage s_banner">
+            <h2>PROJECT</h2>
+        </div>
+        <!-- BREADCRUMB -->
+        <div class="subpage s_breadcrumb">
+            <a href="javascript:;">回首頁</a><span> > </span><a href="javascript:;">案例</a><span></span>
+        </div>
 
+        <!-- SEARCH -->
+        <section class="layout_search">
+            <div class="layout_search_icon">
+                <input id="bar_search" type="text" size="30" placeholder="搜尋作品" />
+                <span id="btn_serch" class="material-symbols-outlined"> search </span>
+            </div>
+            <nav class="layout_search_class">
+                <ul class="class_main">
+                    <li>最新</li>
+                    <li>最熱門</li>
+                    <li>得獎</li>
+                    <li id="li_subclass">類別</li>
+                    <ul id="ul_li_subclass">
+                        <li>品牌 IDENTITY</li>
+                        <li>視覺 KEYVISION</li>
+                        <li>包裝 PACKAGE</li>
+                        <li>網站 WEBSITE</li>
+                    </ul>
+                </ul>
+            </nav>
+        </section>
+        <section class="layout_content_project">
+            <div class="layout_content_project_cards">
+                <h3>識別｜<span>IDENTITY</span></h3>
+                <div>
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-1.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-2.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-3.jpg" alt="" />
+                </div>
+                <p>Read More >></p>
+            </div>
+            <div class="layout_content_project_cards">
+                <h3>視覺｜<span>KEYVISION</span></h3>
+                <div>
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-4.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-5.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-6.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-7.jpg" alt="" />
+                </div>
+                <p>Read More >></p>
+            </div>
+            <div class="layout_content_project_cards">
+                <h3>包裝｜<span>PACKAGE</span></h3>
+                <div>
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-8.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-9.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-10.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-11.jpg" alt="" />
+                </div>
+                <p>Read More >></p>
+            </div>
+            <div class="layout_content_project_cards">
+                <h3>網頁｜<span>WEBSITES</span></h3>
+                <div>
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-12.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-13.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-14.jpg" alt="" />
+                    <img src="./assets/res/03桌機案例/Project_cards/Normal-15.jpg" alt="" />
+                </div>
+                <p>Read More >></p>
+            </div>
+        </section>
         <footer>
             <div class="footer_logo">
                 <img src="./assets/res/01桌機主頁/主頁_footer_logo.png" alt="" />
@@ -98,5 +172,9 @@
                 <p>©2023 by UNITE DESIGN</p>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="assets/js/search.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
