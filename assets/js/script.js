@@ -1,9 +1,9 @@
 ﻿// DISPLAY: GO-TOP 按鈕 / CONTACT 浮動按鈕
 const btn_gotop = document.querySelector('#btn_gotop')
-const btn_contact = document.querySelector('#btn_contact')
+// const btn_contact = document.querySelector('#btn_contact')
+const btn_contact = document.getElementById('btn_contact')
 
 window.addEventListener('scroll', () => {
-    // console.log(window.scrollY)
     if (window.scrollY > 200) {
         btn_gotop.style.opacity = '1'
     } else {
@@ -17,14 +17,13 @@ btn_gotop.addEventListener('click', () => {
     })
 })
 
+btn_contact.style.top = 50 + '%'
 window.addEventListener('scroll', () => {
-    console.log(btn_contact.offsetTop)
-
-    btn_contact.style.top = btn_contact.scrollTooffsetTop0 + 'px'
     setTimeout(() => {
-        btn_contact.style.top = 50 + '%'
+        btn_contact.style.top = window.scrollY + window.innerHeight / 2 + 'px'
     }, 500)
 })
+
 // DISAPLY: 手機版選單
 const btnBurger = document.querySelector('#btnBurger')
 const nav = document.querySelector('.navigation')
