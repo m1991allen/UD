@@ -1023,7 +1023,7 @@ footer hr {
   background-color: #2c2b2b;
   position: absolute;
   top: 40px;
-  right: -80px;
+  right: 0px;
   padding: 1rem !important;
 }
 .layout_search_class ul.class_main #ul_li_subclass li {
@@ -1039,11 +1039,6 @@ footer hr {
   border: none;
   font-size: 17px;
 }
-@media screen and (max-width: 670px) {
-  .layout_search_class ul.class_main #ul_li_subClassList {
-    right: 40px;
-  }
-}
 .layout_search_class ul.class_main .active {
   padding-bottom: 3px;
   border-bottom: 2px solid black;
@@ -1054,6 +1049,7 @@ footer hr {
   margin: 10rem auto;
 }
 .layout_content_project .layout_content_project_cards {
+  text-align: center;
   margin-bottom: 5rem;
 }
 .layout_content_project .layout_content_project_cards h3 {
@@ -1072,16 +1068,149 @@ footer hr {
   text-align: right;
   margin-right: 2rem;
 }
-.layout_content_project .layout_content_project_cards div {
-  text-align: center;
-}
-.layout_content_project .layout_content_project_cards div img {
+.layout_content_project .layout_content_project_cards .project_card {
   display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+.layout_content_project .layout_content_project_cards .project_card img {
   margin: 1rem;
+  cursor: pointer;
+}
+.layout_content_project .layout_content_project_cards .project_card span {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.768627451);
+  color: white;
+  padding: 1rem;
+  left: 0;
+  bottom: 40px;
+  width: 251px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.layout_content_project .layout_content_project_cards .project_card:hover span {
+  opacity: 1;
 }
 
 @media screen and (max-width: 670px) {
   .layout_content_project .layout_content_project_cards p {
     font-size: 13px;
   }
+}
+.layout_process {
+  margin-top: 5rem;
+}
+.layout_process h2,
+.layout_process p {
+  text-align: center;
+}
+.layout_process .layout_process_icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 5rem;
+  text-align: center;
+  padding: 7rem 0;
+  max-width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 670px) {
+  .layout_process .layout_process_icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+.layout_contact {
+  text-align: center;
+}
+.layout_contact .layout_contact_content {
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+}
+.layout_contact .layout_contact_content h2 {
+  font-size: var(--Heading1_pc_32);
+  text-align: center;
+  line-height: 44.53px;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+.layout_contact .layout_contact_content .layout_contact_title p:nth-child(3) {
+  margin-top: 3rem;
+}
+.layout_contact .layout_contact_content .layout_contact_title,
+.layout_contact .layout_contact_content .layout_contact_form {
+  text-align: center;
+  margin: 3rem;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_layout,
+.layout_contact .layout_contact_content .layout_contact_title .form_flex,
+.layout_contact .layout_contact_content .layout_contact_form .form_layout,
+.layout_contact .layout_contact_content .layout_contact_form .form_flex {
+  margin: 1rem 0;
+  text-align: left;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_layout,
+.layout_contact .layout_contact_content .layout_contact_form .form_layout {
+  width: 100%;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_flex,
+.layout_contact .layout_contact_content .layout_contact_form .form_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_flex div,
+.layout_contact .layout_contact_content .layout_contact_form .form_flex div {
+  width: 48%;
+}
+.layout_contact .layout_contact_content .layout_contact_title input,
+.layout_contact .layout_contact_content .layout_contact_form input {
+  height: 40px;
+}
+.layout_contact .layout_contact_content .layout_contact_title input,
+.layout_contact .layout_contact_content .layout_contact_title textarea,
+.layout_contact .layout_contact_content .layout_contact_form input,
+.layout_contact .layout_contact_content .layout_contact_form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 0;
+}
+.layout_contact .layout_contact_content .layout_contact_title #submit,
+.layout_contact .layout_contact_content .layout_contact_form #submit {
+  background-color: var(--Primary_btn_color);
+  color: white;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.layout_contact .layout_contact_content .layout_contact_title #submit:hover,
+.layout_contact .layout_contact_content .layout_contact_form #submit:hover {
+  background-color: var(--Primary_color);
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_social,
+.layout_contact .layout_contact_content .layout_contact_form .form_social {
+  margin-top: 1rem;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_social ul,
+.layout_contact .layout_contact_content .layout_contact_form .form_social ul {
+  display: flex;
+  padding: 0;
+}
+.layout_contact .layout_contact_content .layout_contact_title .form_social ul li,
+.layout_contact .layout_contact_content .layout_contact_form .form_social ul li {
+  padding: 0 5px;
 }

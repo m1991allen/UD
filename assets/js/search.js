@@ -26,7 +26,7 @@
             display: block;
         `
     })
-    ul_li_subClassList.addEventListener('mouseout', () => {
+    ul_li_subClassList.addEventListener('mouseleave', () => {
         ul_li_subClassList.style.cssText = `
             display: none;
         `
