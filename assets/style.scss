@@ -1271,3 +1271,13 @@ footer {
         }
     }
 }
+
+// 分頁：PORTFOLIO
+.layout_portfolio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+}
