@@ -415,20 +415,6 @@ hr {
   /* Center slide text vertically */
   position: relative;
 }
-.layout_project .swiper-button-prev {
-  left: -20px;
-}
-.layout_project .swiper-button-next {
-  right: -20px;
-}
-.layout_project .swiper-button-prev::after {
-  content: "\e5cb";
-  font-family: "Material Icons";
-}
-.layout_project .swiper-button-next::after {
-  content: "\e5cc";
-  font-family: "Material Icons";
-}
 .layout_project .swiper-pagination {
   bottom: -2px !important;
 }
@@ -1136,6 +1122,10 @@ footer .layout_footer hr {
 .layout_content_project .layout_content_project_cards .project_card img {
   margin: 1rem;
   cursor: pointer;
+}
+.layout_content_project .layout_content_project_cards .project_card a {
+  text-align: center;
+  margin-right: 0;
 }
 .layout_content_project .layout_content_project_cards .project_card span {
   opacity: 0;
