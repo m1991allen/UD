@@ -1158,8 +1158,15 @@ footer .layout_footer hr {
 .layout_process {
   margin-top: 5rem;
 }
-.layout_process h2,
+.layout_process h2 {
+  font-size: var(--Heading1_pc_32);
+  letter-spacing: 1px;
+  line-height: 37.5px;
+}
 .layout_process p {
+  font-size: var(--Content2_pc_16);
+  letter-spacing: 3.5px;
+  line-height: 22px;
   text-align: center;
 }
 .layout_process .layout_process_icon {
