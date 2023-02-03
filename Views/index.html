@@ -13,6 +13,7 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
@@ -109,7 +110,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="landing_link">
+                    <div class="layout_flex landing_link">
                         <a href="javascript:;">Explore More</a>
                     </div>
                 </div>
@@ -120,26 +121,51 @@
             <h2>PROJECTS</h2>
             <p>經典案例</p>
             <!-- Swiper -->
-            <div class="swiper swiper-profolio">
+            <div class="swiper swiper-portfolio">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects1/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects2/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects3/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects4/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects5/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects6/Normal.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="../assets/res/01桌機主頁/Projects7/Normal.jpg" alt="" /></div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects1/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects2/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects3/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects4/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects5/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects6/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects7/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/res/01桌機主頁/Projects8/Normal.jpg" alt="" /><span>這邊有一個名稱</span>
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
             <!-- no Swiper (mobile) -->
-            <div class="mobile-profolio">
-                <img src="../assets/res/01桌機主頁/Projects1/Normal.jpg" alt="" />
-                <img src="../assets/res/01桌機主頁/Projects2/Normal.jpg" alt="" />
-                <img src="../assets/res/01桌機主頁/Projects3/Normal.jpg" alt="" />
-                <img src="../assets/res/01桌機主頁/Projects4/Normal.jpg" alt="" />
+            <div class="mobile-portfolio">
+                <div class="mobile-portfolio_card">
+                    <img src="../assets/res/01桌機主頁/Projects1/Normal.jpg" alt="" /><span>這邊有一個名稱(手機)</span>
+                </div>
+                <div class="mobile-portfolio_card">
+                    <img src="../assets/res/01桌機主頁/Projects2/Normal.jpg" alt="" /><span>這邊有一個名稱(手機)</span>
+                </div>
+                <div class="mobile-portfolio_card">
+                    <img src="../assets/res/01桌機主頁/Projects3/Normal.jpg" alt="" /><span>這邊有一個名稱(手機)</span>
+                </div>
+                <div class="mobile-portfolio_card">
+                    <img src="../assets/res/01桌機主頁/Projects4/Normal.jpg" alt="" /><span>這邊有一個名稱(手機)</span>
+                </div>
             </div>
             <div class="landing_link">
                 <a href="javascript:;">Explore More</a>
@@ -181,7 +207,7 @@
                     <p>各司其職在現今社會與文化中更顯重要</p>
                     <p>透過合作與交流加深美感的傳遞與感染力</p>
                 </div>
-                <div class="profolio">
+                <div class="portfolio">
                     <img src="../assets/res/01桌機主頁/hammer/icon.png" alt="" />
                     <ul>
                         <li>
@@ -347,43 +373,45 @@
         </section>
 
         <footer>
-            <div class="footer_logo">
-                <img src="../assets/res/01桌機主頁/主頁_footer_logo.png" alt="" />
-            </div>
-            <div class="footer_nav">
-                <nav>
-                    <ul class="footer_nav_menu">
-                        <li><a href="javascript:;">關於｜ABOUT</a></li>
-                        <li><a href="javascript:;">案例｜PROJECTS</a></li>
-                        <li><a href="javascript:;">服務｜SERVICE</a></li>
-                        <li><a href="javascript:;">聯繫｜CONTACT</a></li>
+            <div class="layout_footer">
+                <div class="footer_logo">
+                    <img src="../assets/res/01桌機主頁/主頁_footer_logo.png" alt="" />
+                </div>
+                <div class="footer_nav">
+                    <nav>
+                        <ul class="footer_nav_menu">
+                            <li><a href="javascript:;">關於｜ABOUT</a></li>
+                            <li><a href="javascript:;">案例｜PROJECTS</a></li>
+                            <li><a href="javascript:;">服務｜SERVICE</a></li>
+                            <li><a href="javascript:;">聯繫｜CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_info">
+                    <p>contact@uddesign.com.tw</p>
+                    <p>100台北市中山區忠孝西路一段6號16樓</p>
+                </div>
+                <hr />
+                <div class="footer_copyright">
+                    <ul class="footer_copyright_icon">
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="../assets/res/01桌機主頁/Property 1=Behance, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="../assets/res/01桌機主頁/Property 1=Ins, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"
+                                ><img src="../assets/res/01桌機主頁/Property 1=FB, Property 2=Normal.png" alt=""
+                            /></a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-            <div class="footer_info">
-                <p>contact@uddesign.com.tw</p>
-                <p>100台北市中山區忠孝西路一段6號16樓</p>
-            </div>
-            <hr />
-            <div class="footer_copyright">
-                <ul class="footer_copyright_icon">
-                    <li>
-                        <a href="javascript:;"
-                            ><img src="../assets/res/01桌機主頁/Property 1=Behance, Property 2=Normal.png" alt=""
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"
-                            ><img src="../assets/res/01桌機主頁/Property 1=Ins, Property 2=Normal.png" alt=""
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"
-                            ><img src="../assets/res/01桌機主頁/Property 1=FB, Property 2=Normal.png" alt=""
-                        /></a>
-                    </li>
-                </ul>
-                <p>©2023 by UNITE DESIGN</p>
+                    <p>©2023 by UNITE DESIGN</p>
+                </div>
             </div>
         </footer>
 

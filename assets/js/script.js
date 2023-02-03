@@ -65,7 +65,7 @@
 // SETTING: Swiper Slider
 ;(function () {
     // 首頁 作品集
-    let swiper_profolio = new Swiper('.swiper-profolio', {
+    let swiper_portfolio = new Swiper('.swiper-portfolio', {
         slidesPerView: 2,
         grid: {
             rows: 2,
