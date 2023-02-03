@@ -1177,7 +1177,7 @@ footer {
     margin: 10rem auto;
     .layout_content_project_cards {
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
         h3 {
             font-family: 'Noto Sans TC';
             font-size: var(--Heading3_pc_20);
@@ -1188,9 +1188,10 @@ footer {
                 font-family: 'Roboto';
             }
         }
-        p {
+        a {
             font-family: 'Roboto';
             font-size: var(--Content2_pc_16);
+            display: block;
             text-align: right;
             margin-right: 2rem;
         }
@@ -1225,8 +1226,10 @@ footer {
 @media screen and (max-width: 670px) {
     .layout_content_project {
         .layout_content_project_cards {
-            p {
+            a {
                 font-size: 13px;
+                text-align: center;
+                margin-right: 0;
             }
         }
     }
@@ -1257,11 +1260,14 @@ footer {
     }
 }
 @media screen and (max-width: 670px) {
-    h2 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 12px;
+    .layout_process {
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 12px;
+            letter-spacing: 3.5px;
+        }
     }
 }
 
