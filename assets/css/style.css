@@ -886,7 +886,6 @@ footer hr {
 }
 .s_banner {
   background-image: url(/assets/res/02桌機關於/Frame\ 1.jpg);
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   height: 347px;
@@ -909,6 +908,10 @@ footer hr {
 }
 
 @media screen and (max-width: 670px) {
+  .s_banner {
+    height: 150px;
+    margin-bottom: 5rem;
+  }
   .s_breadcrumb {
     display: none;
   }
