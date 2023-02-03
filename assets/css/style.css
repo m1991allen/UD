@@ -750,7 +750,7 @@ hr {
   letter-spacing: 3.5pxs;
 }
 .layout_clients .swiper {
-  width: 775px;
+  width: 835px;
   padding: 60px 10px;
 }
 
@@ -821,6 +821,7 @@ hr {
   width: 100%;
   box-sizing: border-box;
   padding: 5px;
+  margin-top: 0.5rem;
 }
 .layout_work .layout_work_content .layout_work_title #submit,
 .layout_work .layout_work_content .layout_work_form #submit {
