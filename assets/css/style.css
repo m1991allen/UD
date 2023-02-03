@@ -184,7 +184,7 @@ header #btnBurger {
 
 hr {
   width: 90%;
-  margin: 5rem auto;
+  margin: 0 auto 5rem;
 }
 
 .layout_banner {
@@ -403,6 +403,9 @@ hr {
   width: 289px;
   cursor: pointer;
   transition: 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .layout_project .swiper-slide {
   text-align: center;
@@ -411,6 +414,12 @@ hr {
   height: calc((100% - 30px) / 2) !important;
   /* Center slide text vertically */
   position: relative;
+}
+.layout_project .swiper-button-prev {
+  left: -20px;
+}
+.layout_project .swiper-button-next {
+  right: -20px;
 }
 .layout_project .swiper-button-prev::after {
   content: "\e5cb";
@@ -502,9 +511,6 @@ hr {
 .layout_chief .layout_chief_content {
   margin: 0 3rem;
 }
-.layout_chief .layout_chief_content img {
-  width: 100%;
-}
 .layout_chief .layout_chief_content .profile h3 {
   font-size: var(--Content1_pc_18);
   font-weight: 350;
@@ -513,18 +519,17 @@ hr {
 }
 .layout_chief .layout_chief_content .profile h4 {
   font-size: var(--Heading2_pc_24);
-  margin: 0;
-  margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: 3px;
 }
 .layout_chief .layout_chief_content .profile p {
-  margin: 0;
+  font-family: "Roboto";
   font-size: var(--Content2_pc_16);
   line-height: 28px;
   font-weight: 300;
   letter-spacing: 1.5px;
   color: var(--Primary_back_color);
+  margin: 0;
 }
 .layout_chief .layout_chief_content .portfolio {
   margin-top: 3rem;
@@ -538,6 +543,7 @@ hr {
   padding-bottom: 1rem;
 }
 .layout_chief .layout_chief_content .portfolio ul li p {
+  font-family: "Roboto";
   font-weight: 300;
   font-size: var(--Content3_pc_14);
   line-height: 22px;
@@ -547,6 +553,7 @@ hr {
 .layout_chief .layout_chief_content .portfolio ul li p:nth-child(1) {
   color: #797979;
 }
+
 @media screen and (max-width: 670px) {
   .layout_chief {
     display: block;
@@ -566,8 +573,7 @@ hr {
   }
   .layout_chief .layout_chief_content .profile h4 {
     font-size: var(--Content1_mb_16);
-    margin: 0;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0 2rem;
     font-weight: 700;
     letter-spacing: 3px;
   }
@@ -675,7 +681,7 @@ hr {
 .layout_yb .layout_yb_cover,
 .layout_yb .layout_yb_title {
   padding: 0 1rem;
-  margin: 10rem 0;
+  margin: 10rem 0 8rem;
 }
 .layout_yb .layout_yb_title h2 {
   font-weight: 500;

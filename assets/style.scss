@@ -181,7 +181,7 @@ header {
 }
 hr {
     width: 90%;
-    margin: 5rem auto;
+    margin: 0 auto 5rem;
 }
 ////////////////////////
 
@@ -419,6 +419,9 @@ hr {
                     width: 289px;
                     cursor: pointer;
                     transition: 0.3s;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -444,7 +447,12 @@ hr {
         // align-items: center;
         position: relative;
     }
-
+    .swiper-button-prev {
+        left: -20px;
+    }
+    .swiper-button-next {
+        right: -20px;
+    }
     .swiper-button-prev::after {
         content: '\e5cb';
         font-family: 'Material Icons';
@@ -547,9 +555,6 @@ hr {
     height: 830px;
     .layout_chief_content {
         margin: 0 3rem;
-        img {
-            width: 100%;
-        }
         .profile {
             h3 {
                 font-size: var(--Content1_pc_18);
@@ -559,18 +564,17 @@ hr {
             }
             h4 {
                 font-size: var(--Heading2_pc_24);
-                margin: 0;
-                margin-bottom: 1rem;
                 font-weight: 700;
                 letter-spacing: 3px;
             }
             p {
-                margin: 0;
+                font-family: 'Roboto';
                 font-size: var(--Content2_pc_16);
                 line-height: 28px;
                 font-weight: 300;
                 letter-spacing: 1.5px;
                 color: var(--Primary_back_color);
+                margin: 0;
             }
         }
         .portfolio {
@@ -582,6 +586,7 @@ hr {
                 li {
                     padding-bottom: 1rem;
                     p {
+                        font-family: 'Roboto';
                         font-weight: 300;
                         font-size: var(--Content3_pc_14);
                         line-height: 22px;
@@ -590,8 +595,6 @@ hr {
                     }
                     p:nth-child(1) {
                         color: #797979;
-                    }
-                    p:nth-child(2) {
                     }
                 }
             }
@@ -616,8 +619,8 @@ hr {
                 }
                 h4 {
                     font-size: var(--Content1_mb_16);
-                    margin: 0;
-                    margin-bottom: 1rem;
+                    margin: 0.5rem 0 2rem;
+                    // margin-bottom: 1rem;
                     font-weight: 700;
                     letter-spacing: 3px;
                 }
@@ -735,7 +738,7 @@ hr {
     .layout_yb_cover,
     .layout_yb_title {
         padding: 0 1rem;
-        margin: 10rem 0;
+        margin: 10rem 0 8rem;
     }
     .layout_yb_title {
         h2 {
@@ -1241,14 +1244,12 @@ footer {
         font-size: var(--Heading1_pc_32);
         letter-spacing: 1px;
         line-height: 37.5px;
-
     }
     p {
         font-size: var(--Content2_pc_16);
         letter-spacing: 3.5px;
         line-height: 22px;
         text-align: center;
-
     }
     .layout_process_icon {
         display: grid;
