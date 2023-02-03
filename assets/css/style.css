@@ -1139,6 +1139,9 @@ footer .layout_footer hr {
   margin-left: 1rem;
   cursor: pointer;
   transition: 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .layout_content_project .layout_content_project_cards .project_card:hover span {
   opacity: 1;
