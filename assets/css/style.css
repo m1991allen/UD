@@ -524,7 +524,7 @@ hr {
   margin: 0;
 }
 .layout_chief .layout_chief_content .portfolio {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .layout_chief .layout_chief_content .portfolio ul {
   padding: 0;
@@ -532,7 +532,7 @@ hr {
   margin-bottom: 0;
 }
 .layout_chief .layout_chief_content .portfolio ul li {
-  padding-bottom: 1rem;
+  padding-bottom: 0.6rem;
 }
 .layout_chief .layout_chief_content .portfolio ul li p {
   font-family: "Roboto";
