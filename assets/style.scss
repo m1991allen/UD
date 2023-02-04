@@ -1067,6 +1067,9 @@ footer {
     margin: auto;
     div {
         margin: 10rem 3rem;
+        p {
+            line-height: 30px;
+        }
     }
     div:nth-child(1) {
         text-align: center;

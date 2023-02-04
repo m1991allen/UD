@@ -993,6 +993,9 @@ footer .layout_footer hr {
 .layout_content_about_grid div {
   margin: 10rem 3rem;
 }
+.layout_content_about_grid div p {
+  line-height: 30px;
+}
 .layout_content_about_grid div:nth-child(1) {
   text-align: center;
 }
