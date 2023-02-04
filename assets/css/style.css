@@ -931,7 +931,7 @@ footer .layout_footer hr {
   }
 }
 .s_banner {
-  background-image: url(/assets/res/02桌機關於/Frame\ 1.jpg);
+  background-image: url(../res/02桌機關於/Frame\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 347px;
