@@ -127,7 +127,7 @@ h2 {
 }
 
 header {
-  max-width: 1300px;
+  max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -861,13 +861,13 @@ footer {
 }
 footer .layout_footer {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
 }
 footer .layout_footer .footer_nav {
-  max-width: 1300px;
+  max-width: 1400px;
 }
 footer .layout_footer .footer_nav ul.footer_nav_menu {
   display: flex;
@@ -878,6 +878,7 @@ footer .layout_footer .footer_nav ul.footer_nav_menu li {
 }
 footer .layout_footer .footer_info p {
   margin: 6px;
+  margin-left: 3rem;
   text-align: left;
 }
 footer .layout_footer .footer_copyright {
