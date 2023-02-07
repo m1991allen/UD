@@ -288,7 +288,7 @@ hr {
     }
     .layout_service_content {
         max-width: 1000px;
-        margin: 7rem auto;
+        margin: -3rem auto 10rem;
         .layout_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -353,7 +353,8 @@ hr {
     .layout_service {
         margin-top: 15rem;
         .layout_service_title {
-            margin: 0;
+            margin: 10rem auto;
+            padding-top: 5rem;
             h2 {
                 font-size: var(--Heading3_pc_20);
             }
@@ -1058,7 +1059,7 @@ footer {
         font-family: 'Roboto';
         font-size: var(--Content2_pc_16);
         letter-spacing: 1px;
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 .layout_content_about_grid {
@@ -1301,7 +1302,11 @@ footer {
             margin-top: 3rem;
         }
 
-        .layout_contact_title,
+        .layout_contact_title {
+            max-width: 370px;
+            margin: auto;
+        }
+
         .layout_contact_form {
             text-align: center;
             margin: 3rem;

@@ -281,7 +281,7 @@ hr {
 }
 .layout_service .layout_service_content {
   max-width: 1000px;
-  margin: 7rem auto;
+  margin: -3rem auto 10rem;
 }
 .layout_service .layout_service_content .layout_grid {
   display: grid;
@@ -345,7 +345,8 @@ hr {
     margin-top: 15rem;
   }
   .layout_service .layout_service_title {
-    margin: 0;
+    margin: 10rem auto;
+    padding-top: 5rem;
   }
   .layout_service .layout_service_title h2 {
     font-size: var(--Heading3_pc_20);
@@ -982,7 +983,7 @@ footer .layout_footer hr {
   font-family: "Roboto";
   font-size: var(--Content2_pc_16);
   letter-spacing: 1px;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .layout_content_about_grid {
@@ -1221,37 +1222,32 @@ footer .layout_footer hr {
 .layout_contact .layout_contact_content .layout_contact_title p:nth-child(3) {
   margin-top: 3rem;
 }
-.layout_contact .layout_contact_content .layout_contact_title,
+.layout_contact .layout_contact_content .layout_contact_title {
+  max-width: 370px;
+  margin: auto;
+}
 .layout_contact .layout_contact_content .layout_contact_form {
   text-align: center;
   margin: 3rem;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_layout,
-.layout_contact .layout_contact_content .layout_contact_title .form_flex,
 .layout_contact .layout_contact_content .layout_contact_form .form_layout,
 .layout_contact .layout_contact_content .layout_contact_form .form_flex {
   margin: 1rem 0;
   text-align: left;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_layout,
 .layout_contact .layout_contact_content .layout_contact_form .form_layout {
   width: 100%;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_flex,
 .layout_contact .layout_contact_content .layout_contact_form .form_flex {
   display: flex;
   justify-content: space-between;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_flex div,
 .layout_contact .layout_contact_content .layout_contact_form .form_flex div {
   width: 48%;
 }
-.layout_contact .layout_contact_content .layout_contact_title input,
 .layout_contact .layout_contact_content .layout_contact_form input {
   height: 40px;
 }
-.layout_contact .layout_contact_content .layout_contact_title input,
-.layout_contact .layout_contact_content .layout_contact_title textarea,
 .layout_contact .layout_contact_content .layout_contact_form input,
 .layout_contact .layout_contact_content .layout_contact_form textarea {
   width: 100%;
@@ -1259,7 +1255,6 @@ footer .layout_footer hr {
   padding: 5px;
   margin: 10px 0;
 }
-.layout_contact .layout_contact_content .layout_contact_title #submit,
 .layout_contact .layout_contact_content .layout_contact_form #submit {
   background-color: var(--Primary_btn_color);
   color: white;
@@ -1268,20 +1263,16 @@ footer .layout_footer hr {
   cursor: pointer;
   transition: 0.3s;
 }
-.layout_contact .layout_contact_content .layout_contact_title #submit:hover,
 .layout_contact .layout_contact_content .layout_contact_form #submit:hover {
   background-color: var(--Primary_color);
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_social,
 .layout_contact .layout_contact_content .layout_contact_form .form_social {
   margin-top: 1rem;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_social ul,
 .layout_contact .layout_contact_content .layout_contact_form .form_social ul {
   display: flex;
   padding: 0;
 }
-.layout_contact .layout_contact_content .layout_contact_title .form_social ul li,
 .layout_contact .layout_contact_content .layout_contact_form .form_social ul li {
   padding: 0 5px;
 }
