@@ -292,7 +292,7 @@ hr {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 .layout_service .layout_service_content .layout_grid .layout_flex h3 {
   font-weight: 500;
