@@ -124,6 +124,7 @@ h2 {
 // 頁首
 header {
     max-width: 1400px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,8 +144,22 @@ header {
                     font-size: var(--Content2_pc_16);
                     transition: 0.1s !important;
                 }
-                li:hover {
-                    font-size: 17px;
+                li:after {
+                    content: '';
+                    display: block;
+                    border-bottom: solid 1px black;
+                    padding-top: 10px;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease-in-out;
+                }
+                li:hover:after {
+                    transform: scaleX(1);
+                }
+                @media screen and (max-width: 670px) {
+                    li:after {
+                        content: '';
+                        border-bottom: solid 1px white !important;
+                    }
                 }
             }
             ul.menu_socialicon {
@@ -558,6 +573,7 @@ hr {
             h4 {
                 font-size: var(--Heading2_pc_24);
                 font-weight: 700;
+                text-shadow: 2px 0 black;
                 letter-spacing: 3px;
             }
             p {
@@ -603,6 +619,9 @@ hr {
             margin: 3rem;
             margin-bottom: 0;
             padding-top: 5rem;
+            img {
+                width: 100%;
+            }
             .profile {
                 h3 {
                     font-size: 20px;
@@ -726,7 +745,7 @@ hr {
 // YEAR BOOK
 .layout_yb {
     display: flex;
-    width: 870px;
+    width: 980px;
     margin: auto;
     .layout_yb_cover,
     .layout_yb_title {
@@ -734,6 +753,7 @@ hr {
         margin: 10rem 0 8rem;
     }
     .layout_yb_title {
+        margin-left: 2rem;
         h2 {
             font-weight: 500;
             font-size: var(--Heading1_pc_32);
@@ -784,6 +804,9 @@ hr {
                 font-size: var(--Content3_mb_12);
             }
         }
+        .layout_yb_title {
+            margin-left: 0rem !important;
+        }
     }
     .landing_link {
         margin-top: 0 !important;
@@ -832,7 +855,7 @@ hr {
 
 // LET'S WORK TOGETHER
 .layout_work {
-    background-image: url('/assets/res/01桌機主頁/contact_bg.jpg');
+    background-image: url('../res/01桌機主頁/contact_bg.jpg');
     background-size: cover;
     // background-attachment: fixed;
     padding: 5rem;
@@ -849,6 +872,11 @@ hr {
         }
         .layout_work_title p:nth-child(3) {
             margin-top: 3rem;
+        }
+        .layout_work_title {
+            p {
+                line-height: 2rem;
+            }
         }
 
         .layout_work_title,
@@ -900,7 +928,7 @@ hr {
         }
     }
 }
-@media screen and(max-width:670px) {
+@media screen and (max-width: 670px) {
     .layout_work {
         display: none;
     }
@@ -957,7 +985,7 @@ footer {
         }
     }
 }
-@media screen and(max-width:670px) {
+@media screen and (max-width: 670px) {
     footer {
         .layout_footer {
             font-size: var(--Content3_mb_12);
@@ -1182,7 +1210,6 @@ footer {
             font-size: var(--Heading3_pc_20);
             font-weight: 300;
             line-height: 30px;
-            margin-left: 2rem;
             span {
                 font-family: 'Roboto';
             }
@@ -1318,6 +1345,7 @@ footer {
             .form_layout {
                 width: 100%;
             }
+
             .form_flex {
                 display: flex;
                 justify-content: space-between;

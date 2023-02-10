@@ -128,6 +128,7 @@ h2 {
 
 header {
   max-width: 1400px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,8 +152,22 @@ header .navigation nav ul.menu_navigation li {
   font-size: var(--Content2_pc_16);
   transition: 0.1s !important;
 }
-header .navigation nav ul.menu_navigation li:hover {
-  font-size: 17px;
+header .navigation nav ul.menu_navigation li:after {
+  content: "";
+  display: block;
+  border-bottom: solid 1px black;
+  padding-top: 10px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+header .navigation nav ul.menu_navigation li:hover:after {
+  transform: scaleX(1);
+}
+@media screen and (max-width: 670px) {
+  header .navigation nav ul.menu_navigation li:after {
+    content: "";
+    border-bottom: solid 1px white !important;
+  }
 }
 header .navigation nav ul.menu_socialicon {
   display: flex;
@@ -513,6 +528,7 @@ hr {
 .layout_chief .layout_chief_content .profile h4 {
   font-size: var(--Heading2_pc_24);
   font-weight: 700;
+  text-shadow: 2px 0 black;
   letter-spacing: 3px;
 }
 .layout_chief .layout_chief_content .profile p {
@@ -557,6 +573,9 @@ hr {
     margin: 3rem;
     margin-bottom: 0;
     padding-top: 5rem;
+  }
+  .layout_chief .layout_chief_content img {
+    width: 100%;
   }
   .layout_chief .layout_chief_content .profile h3 {
     font-size: 20px;
@@ -644,7 +663,7 @@ hr {
     margin: 3rem 0;
   }
   .layout_do div div:nth-child(2),
-.layout_do div div:nth-child(6) {
+  .layout_do div div:nth-child(6) {
     border: none !important;
   }
   .layout_do div:nth-child(5) {
@@ -668,13 +687,16 @@ hr {
 }
 .layout_yb {
   display: flex;
-  width: 870px;
+  width: 980px;
   margin: auto;
 }
 .layout_yb .layout_yb_cover,
 .layout_yb .layout_yb_title {
   padding: 0 1rem;
   margin: 10rem 0 8rem;
+}
+.layout_yb .layout_yb_title {
+  margin-left: 2rem;
 }
 .layout_yb .layout_yb_title h2 {
   font-weight: 500;
@@ -714,20 +736,23 @@ hr {
     width: 100%;
   }
   .layout_yb .layout_yb_cover,
-.layout_yb .layout_yb_title {
+  .layout_yb .layout_yb_title {
     margin: 5rem 0;
   }
   .layout_yb .layout_yb_cover h2,
-.layout_yb .layout_yb_title h2 {
+  .layout_yb .layout_yb_title h2 {
     font-size: 20px;
   }
   .layout_yb .layout_yb_cover h3,
-.layout_yb .layout_yb_title h3 {
+  .layout_yb .layout_yb_title h3 {
     font-size: var(--Heading2_mb_18);
   }
   .layout_yb .layout_yb_cover p,
-.layout_yb .layout_yb_title p {
+  .layout_yb .layout_yb_title p {
     font-size: var(--Content3_mb_12);
+  }
+  .layout_yb .layout_yb_title {
+    margin-left: 0rem !important;
   }
   .landing_link {
     margin-top: 0 !important;
@@ -769,7 +794,7 @@ hr {
   }
 }
 .layout_work {
-  background-image: url("/assets/res/01桌機主頁/contact_bg.jpg");
+  background-image: url("../res/01桌機主頁/contact_bg.jpg");
   background-size: cover;
   padding: 5rem;
 }
@@ -787,6 +812,9 @@ hr {
 }
 .layout_work .layout_work_content .layout_work_title p:nth-child(3) {
   margin-top: 3rem;
+}
+.layout_work .layout_work_content .layout_work_title p {
+  line-height: 2rem;
 }
 .layout_work .layout_work_content .layout_work_title,
 .layout_work .layout_work_content .layout_work_form {
@@ -1034,9 +1062,6 @@ footer .layout_footer hr {
 .layout_search_icon input::-moz-placeholder {
   color: white;
 }
-.layout_search_icon input:-ms-input-placeholder {
-  color: white;
-}
 .layout_search_icon input::placeholder {
   color: white;
 }
@@ -1111,7 +1136,6 @@ footer .layout_footer hr {
   font-size: var(--Heading3_pc_20);
   font-weight: 300;
   line-height: 30px;
-  margin-left: 2rem;
 }
 .layout_content_project .layout_content_project_cards h3 span {
   font-family: "Roboto";
