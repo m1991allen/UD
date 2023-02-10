@@ -891,7 +891,7 @@ footer {
 footer .layout_footer {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr 1fr;
-  align-items: center;
+  align-items: end;
   max-width: 1400px;
   margin: auto;
 }
@@ -901,12 +901,13 @@ footer .layout_footer .footer_nav {
 footer .layout_footer .footer_nav ul.footer_nav_menu {
   display: flex;
   padding: 0;
+  margin-bottom: 0px;
 }
 footer .layout_footer .footer_nav ul.footer_nav_menu li {
   margin: 0 1rem;
 }
 footer .layout_footer .footer_info p {
-  margin: 6px;
+  margin: 6px 6px 0px;
   margin-left: 3rem;
   text-align: left;
 }
